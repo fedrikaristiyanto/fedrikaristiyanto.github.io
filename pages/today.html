@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pengingat hari</title>
+<meta charset="utf-8">
+<meta name="viewport" content="">
+</head>
+<body>
+klik en tombol ndok nisor iki !! .<br />
+<button onclick="myFunction()">Tampilno</button>
+
+<br />
+<p style="color:white;background:red" id="Tampilkan Hari">
+</>
+<script>
+function myFunction()
+{
+var x;
+var d=new Date().getDay();
+switch (d)
+  {
+  case 0:
+    x="Sekarang Hari MINGGU";
+    break;
+  case 1:
+    x="Sekarang Hari SENIN";
+    break;
+  case 2:
+    x="Sekarang Hari SELASA";
+    break;
+  case 3:
+    x="Sekarang Hari RABU";
+    break;
+  case 4:
+    x="Sekarang Hari KAMIS";
+    break;
+  case 5:
+    x="Sekarang Hari JUM'AT";
+    break;
+  case 6:
+    x="Sekarang Hari SABTU";
+    break;
+  }
+document.getElementById("Tampilkan Hari").innerHTML=x;
+}
+</script>
+</body>
+
+</html>
