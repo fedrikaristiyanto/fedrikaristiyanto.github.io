@@ -1,2 +1,2 @@
 # fedrikaristiyanto.github.io
-my site
+kunjungi url diatas
