@@ -1,1 +1,1 @@
-
+tidak ada apa apa
