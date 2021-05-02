@@ -8,11 +8,12 @@
 </p>
 <p>
 Grams: <span id="outputGrams"></span><br>
-MiliGrams: <span id="output"></span>
+MiliGrams: <span id="outputMG"></span>
 </p>
 <script>
 function weightConverter(valNum) {
 document.getElementById("outputGrams").innerHTML=valNum*1000;
+document.getElementById("outputMG").innerHTML=valNum*1000000;
 }
 </script>
 </body>
