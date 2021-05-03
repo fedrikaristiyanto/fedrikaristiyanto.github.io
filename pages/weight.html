@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>konversi berat</title>
 </head>
 <body>
 <p>
@@ -15,6 +15,7 @@ MiliGrams: <span id="outputMG"></span>
 </p>
 <script>
 function weightConverter(valNum) {
+document.getElementById("outputHG").innerHTML=valNum*10;
 document.getElementById("outputGrams").innerHTML=valNum*1000;
 document.getElementById("outputMG").innerHTML=valNum*1000000;
 }
