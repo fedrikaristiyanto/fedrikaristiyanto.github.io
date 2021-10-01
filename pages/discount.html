@@ -11,13 +11,14 @@
 <button onclick="myFunction()">hitung</button>
 <br>
 <br>
-<p id="total">...</p>
+<p>harga setelah diskon</p>
+<br>
+<input readonly id="total">
 <script>
  function myFunction() {
 var price = document.getElementById("hrg").value;
 var discount = document.getElementById("diskon").value;
-var percent = 100;
-var N = document.getElementById("total").innerHTML= price - (price * discount / percent);
+var N = document.getElementById("total").innerHTML= price - (price * discount / 100);
 }
 </script>
 </body>
