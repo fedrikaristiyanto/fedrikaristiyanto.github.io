@@ -6,14 +6,13 @@
 <input type="number" id="longer_a">
 <br>
 <button onclick="myFunction()">h</button>
-<textarea readonly id="shorter_b">
-<p id="anb">...</p>
+<p id="shorter_b">...</p>
+<p id="anb">.</p>
 <script>
 function myFunction(){
 var phi = 1.61803;
 var a = document.getElementById("longer_a").value;
 var b = document.getElementById("shorter_b").innerHTML=a/phi;
-document.getElementById("anb").innerHTML=a+b;
 }
 </script>
 </body>
