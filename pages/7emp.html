@@ -10,9 +10,10 @@
 <p id="anb">.</p>
 <script>
 function myFunction(){
-var phi = 1 + (math.sqrt(5) / 2);
+var phi = 1.618;
 var a = document.getElementById("longer_a").value;
-var b = document.getElementById("shorter_b").innerHTML=a/phi;
+const b = document.getElementById("shorter_b").innerHTML=a/phi;
+document.getElementById("anb").innerHTML=a+b;
 }
 </script>
 </body>
