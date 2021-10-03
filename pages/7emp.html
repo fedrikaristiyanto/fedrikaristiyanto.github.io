@@ -10,9 +10,10 @@
 <p id="anb">...</p>
 <script>
 function myFunction(){
+var phi = 1.61803;
 var a = document.getElementById("longer_a").value;
-var b = document.getElementById("shorter_b").innerHTML=a/1.61803;
-var ab = document.getElementById("anb").innerHTML=a+(a/1.61803);
+var b = document.getElementById("shorter_b").innerHTML=a/phi;
+var ab = document.getElementById("anb").innerHTML=a*phi;
 }
 </script>
 </body>
