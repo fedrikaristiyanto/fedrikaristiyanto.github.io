@@ -2,5 +2,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 520" width="600" height="520">
-  <polygon points="300,0 600,520 0,520" fill="yellow"/>
+  <polygon points="300,0 600,520 0,520" style="fill:yellow"/>
 </svg>
