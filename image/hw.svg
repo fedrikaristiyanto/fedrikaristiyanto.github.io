@@ -5,6 +5,6 @@
         <text font-size="32"  x="25" y="60">
            Hello, World!
         </text>
-<animate attributeName='opacity' values='0;1' dur='4s' fill='freeze' begin="0s"/>
+<animate attributeName='opacity' values='0;1;0' dur='4s' fill='freeze' begin="0s"/>
     </g>
 </svg>  
