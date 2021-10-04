@@ -3,8 +3,8 @@
 <svg width="220px" height="120px"  xmlns="http://www.w3.org/2000/svg">
     <g>
         <text font-size="32"  x="25" y="60">
-           Hello, World!
+           Halo Dunia!
         </text>
-<animate attributeName='opacity' values='0;1;0;1' dur='4s' fill='freeze' begin="0s"/>
+<animate attributeName='opacity' values='0;1' dur='6s' fill='blue' begin="0s"/>
     </g>
 </svg>  
