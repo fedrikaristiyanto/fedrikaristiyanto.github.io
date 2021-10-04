@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg>
-<svg width="500px" height="500px"  xmlns="http://www.w3.org/2000/svg">
+<svg width="550px" height="500px"  xmlns="http://www.w3.org/2000/svg">
     
 
 <polygon points="300,0 600,520 0,520" style="fill:yellow"/>
