@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8">
 <!DOCTYPE svg>
-<svg width="391" height="391" xmlns="http://www.w3.org/2000/svg">
-	 <polygon points="100,10 39,195 190,78 10,78 159,195"
-  style="fill:red;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+<polygon points="100,10 39,195 190,78 10,78 159,195" style="fill:red;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+
 </svg>
