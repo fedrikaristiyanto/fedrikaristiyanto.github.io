@@ -3,7 +3,7 @@
 <svg width="200px" height="200px"  xmlns="http://www.w3.org/2000/svg">
     
 
-<circle cx="100" cy="100" r="50" style="fill:white;stroke:black;stroke-width=1"/>
+<circle cx="100" cy="100" r="50" style="fill:none;stroke:black;stroke-width=1"/>
 
 
 
