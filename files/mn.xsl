@@ -9,13 +9,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <h2>drink menu</h2>
   <table border="1">
     <tr bgcolor="#9acd32">
-      <th>name</th>
-      <th>price</th>
+      <th>first name</th>
+      <th>last name</th>
+      <th>full name</th>
     </tr>
     <xsl:for-each select="menu/drink">
     <tr>
-      <td><xsl:value-of select="name"/></td>
-      <td><xsl:value-of select="price"/></td>
+      <td><xsl:value-of select="first_name"/></td>
+      <td><xsl:value-of select="last_name"/></td>
+      <td><xsl:value-of select="last_name"/></td>
     </tr>
     </xsl:for-each>
   </table>
