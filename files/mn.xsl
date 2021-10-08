@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h2>name</h2>
   <table border="1">
-    <tr bgcolor="blue">
+    <tr color="white" bgcolor="blue">
       <th>first name</th>
       <th>last name</th>
       <th>full name</th>
