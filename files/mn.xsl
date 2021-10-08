@@ -8,7 +8,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h2>name</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
+    <tr bgcolor="blue">
       <th>first name</th>
       <th>last name</th>
       <th>full name</th>
@@ -17,7 +17,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <tr>
       <td><xsl:value-of select="first name"/></td>
       <td><xsl:value-of select="last name"/></td>
-      <td><xsl:value-of select="last name"/></td>
+      <td><xsl:value-of select="full name"/></td>
     </tr>
     </xsl:for-each>
   </table>
