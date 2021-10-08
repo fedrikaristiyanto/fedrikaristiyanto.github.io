@@ -2,13 +2,10 @@
 
 <?xml-stylesheet type="text/xsl" href="/files/mn.xsl"?>
 
-<menu>
- <drink>
-  <name>coffee</name>
-  <price>3000</price>
- </drink>
- <drink>
-  <name>tea</name>
-  <price>2000</price>
- </drink>
-</menu>
+<contact>
+ <info>
+  <first_name>Fedrik</first_name>
+  <last_name>Aristiyanto</last_name>
+  <full_name>Fedrik Aristiyanto</full_name>
+ </info>
+</contact>
