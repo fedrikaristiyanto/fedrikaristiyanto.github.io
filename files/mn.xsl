@@ -13,7 +13,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>last name</th>
       <th>full name</th>
     </tr>
-    <xsl:for-each select="menu/drink">
+    <xsl:for-each select="contact/info">
     <tr>
       <td><xsl:value-of select="first name"/></td>
       <td><xsl:value-of select="last name"/></td>
