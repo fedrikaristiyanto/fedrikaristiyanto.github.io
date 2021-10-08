@@ -15,9 +15,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </tr>
     <xsl:for-each select="menu/drink">
     <tr>
-      <td><xsl:value-of select="first_name"/></td>
-      <td><xsl:value-of select="last_name"/></td>
-      <td><xsl:value-of select="last_name"/></td>
+      <td><xsl:value-of select="first name"/></td>
+      <td><xsl:value-of select="last name"/></td>
+      <td><xsl:value-of select="last name"/></td>
     </tr>
     </xsl:for-each>
   </table>
