@@ -4,4 +4,8 @@
   <name>coffee</name>
   <price>3000</price>
  </drink>
+ <drink>
+  <name>tea</name>
+  <price>2000</price>
+ </drink>
 </menu>
