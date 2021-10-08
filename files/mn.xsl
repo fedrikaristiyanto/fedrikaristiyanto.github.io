@@ -9,8 +9,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <h2>My MN</h2>
   <table border="1">
     <tr bgcolor="#9acd32">
-      <th>nama</th>
-      <th>harga</th>
+      <th>name</th>
+      <th>price</th>
     </tr>
     <xsl:for-each select="menu/drink">
     <tr>
