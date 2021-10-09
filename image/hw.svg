@@ -2,7 +2,7 @@
 <!DOCTYPE svg>
 <svg width="220px" height="100px"  xmlns="http://www.w3.org/2000/svg">
     <g>
-        <text font-size="32"  x="25" y="60">
+        <text font-size="30"  x="25" y="60">
            Halo Dunia!
         </text>
 <animate attributeName='opacity' values='0;1' dur='10s' begin="0s"/>
