@@ -1,1 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 600 520" width="100%" height="100%">
+  <polygon points="300,0 600,520 0,520" style="fill:none;stroke:black;"/>
+</svg>
