@@ -37,6 +37,19 @@
      <p id="sentences">oh iya sekarang hari apa ya?
     <br>kita lihat <a href="/pages/today.html">dimari</a> yuk!</p>
      </article>
+     <script>
+function setup() {
+  createCanvas(100, 100, WEBGL);
+}
+
+function draw() {
+  background(200);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  box(50);
+}
+</script>
+
     </section>
     <footer>
      <p><small>hosted on github.com</small></p>
