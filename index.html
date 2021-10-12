@@ -28,6 +28,7 @@
     <header>
      <h2>My Personal Site</h2>
     </header>
+
     <section>
      <nav>
        <a href="http://fedrikaristiyanto.github.io">HOME</a> | <a href="/pages/aboutme.html">ABOUT ME</a> | 
@@ -46,7 +47,8 @@
 
      <script>
 function setup() {
-  createCanvas(100, 100, WEBGL);
+  let canvas = createCanvas(100, 100, WEBGL);
+  canvas.parent("kubus");
 }
 
 function draw() {
@@ -56,9 +58,9 @@ function draw() {
   box(50);
 }
     </script>
-<br>
 
- 
+<div id="kubus"></div>
+
     </section>
 
    </body>
