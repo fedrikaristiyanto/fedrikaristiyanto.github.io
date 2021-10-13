@@ -1,4 +1,3 @@
-function convert(x){
-  valNum = parseFloat(x);
-  document.getElementById("output").innerHTML=Math.sqrt(x);
+function convert(value){
+  document.getElementById("output").innerHTML=Math.sqrt(value);
 }
