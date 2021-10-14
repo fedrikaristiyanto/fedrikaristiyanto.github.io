@@ -4,9 +4,9 @@ var Hm = document.getElementById("height").value/100;
 var bmi = W / (Hm**2);
 
 if (bmi < 18.5) {
- document.write("BMI: " + bmi + "<br> kurus");}
+ document.getElementById("output").innerHTML=bmi + "<br> kurus";}
 else if (bmi < 25) {
- document.write("BMI: " + bmi + "<br> normal");}
+ document.getElementById("output").innerHTML=bmi + "<br> normal";}
 else {
- document.write("BMI: " + bmi + "<br> gemuk");}
+ document.getElementById("output").innerHTML=bmi + "<br> gemuk";}
 }
