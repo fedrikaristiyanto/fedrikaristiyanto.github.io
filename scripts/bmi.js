@@ -5,7 +5,7 @@ var bmi = W / (Hm**2);
 
 if (bmi < 18.5) {
  document.getElementById("output").innerHTML="BMI: " + bmi + "<br> kurus";}
-elseif (bmi < 25) {
+else if (bmi < 25) {
  document.getElementById("output").innerHTML="BMI: " + bmi + "<br> normal";}
 else {
 document.getElementById("output").innerHTML="BMI: " + bmi + "<br> gemuk";}
