@@ -12,11 +12,11 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-ctx.font = "50px Verdana";
+ctx.font = "50px Courier New";
 var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-gradient.addColorStop("0", "green");
-gradient.addColorStop("0.5", "blue");
-gradient.addColorStop("1.0", "red");
+gradient.addColorStop("0", "red");
+gradient.addColorStop("0.5", "green");
+gradient.addColorStop("1.0", "blue");
 ctx.fillStyle = gradient;
 ctx.fillText("Hello World!", 10, 90);
 </script>
