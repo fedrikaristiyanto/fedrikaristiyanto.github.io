@@ -14,13 +14,13 @@ $$ x^y $$
 <input type="number" placeholder="masukkan x" id="eks"><br>
 <input type="number" placeholder="masukkan y" id="ye"><br><br>
 <button onclick="myFunct()">hitung</button>
-<p id="zet"></p>
+<input id="output" readonly>
 <script>
 function myFunct() {
 var x = document.getElementById("eks").value;
 var y = document.getElementById("ye").value;
 var z = Math.pow(x, y);
- document.getElementById("zet").innerHTML=z;
+ document.getElementById("output").value=z;
 }
 </script>
 </body>
