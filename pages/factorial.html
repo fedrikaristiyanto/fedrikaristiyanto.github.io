@@ -7,7 +7,7 @@
 
 <link href="/css/inputnum.css" rel="stylesheet" type="text/css" />
 
-<link>
+<link href="">
 
  <script src="https://unpkg.com/mathjs@9.5.0/lib/browser/math.js"></script>
 </head>
@@ -16,11 +16,11 @@
 <input type="number" id="in"></input>!
 <br><br>
 <button onclick="ct()">hitung</button>
-<p id="out"></p>
+<p id="output"></p>
 <script>
 function ct() {
 const x = document.getElementById("in").value;
-document.getElementById("out").innerHTML=math.factorial(x);
+document.getElementById("output").innerHTML=math.factorial(x);
 }
 </script>
 </body>
