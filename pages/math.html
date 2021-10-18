@@ -8,7 +8,26 @@ ul li { background:#ffe5e5;margin:5px;}
 </style>
 </head>
 <body>
-<h2>math</h2>
+
+
+<canvas id="myCanvas" width="350" height="150" style="border:1px solid #d3d3d3;"></canvas>
+
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "40px Courier New";
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "red");
+gradient.addColorStop("0.5", "green");
+gradient.addColorStop("1.0", "blue");
+ctx.fillStyle = gradient;
+ctx.fillText("Mathematics", 10, 90);
+</script>
+
+
 
 
 <svg version="1.1"
