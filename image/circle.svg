@@ -5,6 +5,6 @@
 <g>
 <circle cx="100" cy="100" r="50" style="fill:none;stroke:black;stroke-width=1"/>
 <line x1="100" y1="100" x2="150" y2="100" style="stroke:black;stroke-dasharray:5,5"/>
-<text x="101" y="98">r</text>
+<text x="125" y="98">r</text>
 </g>
 </svg>  
