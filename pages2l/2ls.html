@@ -11,14 +11,18 @@
    <li><a href="/pages2l/today.html">Today is </a></li>
    <li><a href="/pages2l/bmi.html">kalkulator bmi</a></li>
  </ul>
+<button onclick="balik()">kembali</button>
 
 <script>
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-
 ctx.font = "30px monospace";
 ctx.fillText("Tools", 10, 50);
+
+function balik(){
+ window.history.back();
+}
 
 </script>
 
