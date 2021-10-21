@@ -1,5 +1,5 @@
 function setup () {
-let canvas = createCanvas(400,400);
+var canvas = createCanvas(400,400);
 canvas.parent("tgl");
 }
 
@@ -8,5 +8,5 @@ background(silver);
 var d = day();
 var m = month();
 var y = year();
-text(d,5,50);
+text(d, 5,50);
 }
