@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-  background("silver");
+  background("goldenrod");
   let d = day();
   let m = month();
   let y = year();
