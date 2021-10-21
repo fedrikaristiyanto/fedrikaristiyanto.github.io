@@ -7,6 +7,7 @@ function draw() {
   background("silver");
   let d = day();
   let m = month();
-  text('tanggal: \n' + d + "/"+m, 5, 50);
+  let y = year();
+  text('tanggal:\n' +d+"/"+m+"/"+y, 5, 50);
   
 }
