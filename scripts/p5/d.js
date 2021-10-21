@@ -5,8 +5,8 @@ canvas.parent("tgl");
 
 function draw() {
 background(silver);
-let d = day();
-let m = month();
-let y = year();
-text(d+"-"+"-"+y,5,50);
+var d = day();
+var m = month();
+var y = year();
+text(d,5,50);
 }
