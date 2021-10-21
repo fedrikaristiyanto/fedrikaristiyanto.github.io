@@ -8,5 +8,5 @@ background(silver);
 let d = day();
 let m = month();
 let y = year();
-text(d+"-"+"-"+y);
+text(d+"-"+"-"+y,5,50);
 }
