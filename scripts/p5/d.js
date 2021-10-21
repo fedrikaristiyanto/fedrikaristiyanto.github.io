@@ -6,6 +6,7 @@ function setup() {
 function draw() {
   background("silver");
   let d = day();
-  text('Current day: \n' + d, 5, 50);
+  let m = month();
+  text('tanggal: \n' + d + "/"+m, 5, 50);
   
 }
