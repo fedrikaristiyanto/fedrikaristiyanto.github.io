@@ -64,11 +64,11 @@
 function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
   canvas.parent("kubus");
-  img = loadImage("/image/20181110_142850.jpg")
+  img = loadImage("/image/polygon.svg")
 }
 
 function draw() {
-  background("pink");
+  background("white");
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
   texture(img);
