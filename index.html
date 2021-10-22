@@ -64,12 +64,14 @@
 function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
   canvas.parent("kubus");
+  img = loadImage("/image/polygon.svg")
 }
 
 function draw() {
   background("black");
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
+  texture(img);
   box(50);
 }
     </script>
