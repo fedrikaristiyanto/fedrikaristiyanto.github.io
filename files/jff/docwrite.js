@@ -1,1 +1,1 @@
-document.write(eval("5+(5*5)));
+document.write(eval("5+(5*5)"));
