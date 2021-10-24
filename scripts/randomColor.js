@@ -21,5 +21,8 @@ function change(){
   color = "Yellow";
  }
 document.body.style.backgroundColor=color;
-document.getElementById("val").value=x;
+document.getElementById("val").value="I am " + color;
 }
+
+
+
