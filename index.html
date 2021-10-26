@@ -81,8 +81,7 @@ function setup() {
 function draw() {
   background("white");
   noStroke();
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.01);
+  rotateY(millis()/500);
   texture(img);
   box(50);
 }
