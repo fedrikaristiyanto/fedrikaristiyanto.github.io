@@ -71,7 +71,7 @@
 <p><a href="/pages2l/2ls.html">Tools</a></p>
 <p><a href="/pages/math.html">Mathematics</a></p>
 
-   <script>
+  <script>
 function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
   canvas.parent("kubus");
@@ -80,12 +80,13 @@ function setup() {
 
 function draw() {
   background("white");
+  noStroke();
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
   texture(img);
   box(50);
 }
-    </script>
+   </script>
 
 <div id="kubus"></div>
 
