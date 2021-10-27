@@ -1,7 +1,7 @@
 d3.select('#header')
   .append('svg')
     .attr('width', 300)
-    .attr('height', 200)
+    .attr('height', 150)
     .style('background', 'MediumBlue')
   .append('text')
     .attr('x', 10)
