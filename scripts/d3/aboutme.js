@@ -1,4 +1,4 @@
-d3.select('#output')
+d3.select('#header')
   .append('svg')
     .attr('width', 700)
     .attr('height', 500)
