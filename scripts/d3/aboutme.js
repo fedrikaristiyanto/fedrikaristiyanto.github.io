@@ -1,10 +1,10 @@
 d3.select('#header')
   .append('svg')
-    .attr('width', 300)
+    .attr('width', 400)
     .attr('height', 300)
     .style('background', 'MediumBlue')
   .append('text')
     .attr('x', 10)
-    .attr('y', 10)
-    .style({'fill':'White','font-size':'70'})
+    .attr('y', 90)
+    .style({'fill':'White','font-size':'60'})
     .text('About.Me');
