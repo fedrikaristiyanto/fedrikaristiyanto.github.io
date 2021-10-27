@@ -2,7 +2,7 @@ let rSlider, gSlider, bSlider;
 
 function setup() {
   // create canvas
-  createCanvas(700, 400);
+  createCanvas(400, 400);
   textSize(15);
   noStroke();
 
