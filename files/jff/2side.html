@@ -16,6 +16,7 @@
     <p id="greet"></p>
     <script>
         function mulai(){
+        setTimeout(function(){
             var tebakan = document.getElementById("selected").value;
             var side = ["Side A", "Side B"];
             var kejadian = side[Math.floor(Math.random()*side.length)];
@@ -27,7 +28,7 @@ if (tebakan == kejadian)    {
 else {
     document.getElementById("greet").innerHTML="maaf kamu blm beruntung :p";
 }
-            
+       }, 3000);     
         }
     </script>
     </body>
