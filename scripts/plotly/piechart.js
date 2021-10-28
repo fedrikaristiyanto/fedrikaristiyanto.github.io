@@ -1,6 +1,6 @@
 var data = [{
-  values: [10, 20, 30],
-  labels: ['x', 'y', 'z'],
+  values: [1, 2, 2, 2],
+  labels: ['Others Lang', 'JS', 'CSS', 'HTML'],
   type: 'pie'
 }];
 
