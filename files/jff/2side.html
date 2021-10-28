@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <label>tebak</label>
+    <select id="selected">
+        <option value="Side A">Side A</option>
+        <option value="Side B">Side B</option>
+    </select>
+    <button onclick="mulai()">lempar koin</button>
+    <p>hasil: <span id="output"></span></p>
+    <p id="greet"></p>
+    <script>
+        function mulai(){
+            var tebakan = document.getElementById("selected").value;
+            var side = ["Side A", "Side B"];
+            var kejadian = side[Math.floor(Math.random()*side.length)];
+            document.getElementById("output").innerHTML=kejadian;
+
+if (tebakan == kejadian)    {
+    document.getElementById("greet").innerHTML=" selamat kamu benar";
+}
+else {
+    document.getElementById("greet").innerHTML="maaf kamu blm beruntung";
+}
+            
+        }
+    </script>
+    </body>
+</html>
