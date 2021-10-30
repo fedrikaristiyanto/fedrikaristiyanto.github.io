@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tebak sisi koin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#output {
+background-color:gold;
+color:goldenrod;
+border:1px solid goldenrod;
+width:50px;
+height:50px;
+border-radius:50%;
+display:none;
+padding:10px;
+font:20px Georgia;
+text-align:center;
+}
+</style>
+    </head>
+    <body>
+ <h3>tebak 2 sisi koin</h3>
+    <label>tebak atau pilih disini: </label>
+    <select id="selected">
+        <option value="Side A">Side A</option>
+        <option value="Side B">Side B</option>
+    </select>
+ <br>
+    <button onclick="mulai()">klik</button>
+    <p id="output"></p>
+    <p id="greet"></p><br>
+   <button onclick="document.location.reload(true)">reload</button>
+    <script>
+        function mulai(){
+        setTimeout(function(){
+            var tebakan = document.getElementById("selected").value;
+            var side = ["Side A", "Side B"];
+            var kejadian = side[Math.floor(Math.random()*side.length)];
+          
+var hasil = document.getElementById("output").innerHTML=kejadian;
+var tampilan = document.getElementById("output");
+tampilan.style.display="block";
+
+
+if (tebakan == kejadian)    {
+    document.getElementById("greet").innerHTML="selamat kamu benar :)";
+}
+else {
+    document.getElementById("greet").innerHTML="maaf kamu blm beruntung :p";
+}
+       }, 3000);     
+        }
+
+    </script>
+    </body>
+</html>
