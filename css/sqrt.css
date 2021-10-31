@@ -1,5 +1,5 @@
-input {
-  font:16px red;
+input [type=number] {
+  font:16px red courier new;
 }
 #process{
   margin:15px;
