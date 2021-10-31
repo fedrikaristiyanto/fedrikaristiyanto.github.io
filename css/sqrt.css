@@ -2,6 +2,7 @@ input {
   font:16px courier new;
   color:red;
   box-shadow:2px 2px 4px black inset;
+  padding:10px;
 }
 #process{
   margin:15px;
