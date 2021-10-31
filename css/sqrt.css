@@ -1,5 +1,6 @@
 input [type=number] {
-  font:16px red courier new;
+  font:16px courier new;
+  color:red;
 }
 #process{
   margin:15px;
