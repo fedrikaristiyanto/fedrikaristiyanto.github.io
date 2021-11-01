@@ -11,4 +11,5 @@ input {
   border:5px outset;
   border-radius: 2px;
   box-shadow:10px 10px 20px black;
+  height:500px;
 }
