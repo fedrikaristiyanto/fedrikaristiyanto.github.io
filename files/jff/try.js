@@ -1,1 +1,1 @@
-document.write(eval("5+(5*5)"));
+setInterval(document.write("I love U"),1000);
