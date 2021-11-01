@@ -8,7 +8,7 @@ input {
   margin:15px;
   padding:15px;
   background-color:silver;
-  border:ridge;
+  border:5px outset;
   border-radius: 2px;
   box-shadow:10px 10px 20px black;
 }
