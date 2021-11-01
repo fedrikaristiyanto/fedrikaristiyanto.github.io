@@ -2,9 +2,7 @@ ul {
     list-style-type:none;
     overflow:hidden;
     margin:0;
-background-color:green;
-color:white;
-
+    background-color:green;
 }
 
 li {
@@ -14,4 +12,5 @@ li {
 li a {
     display:block;
     padding:8px;
+    color:white;
 }
