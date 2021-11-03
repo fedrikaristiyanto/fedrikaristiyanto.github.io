@@ -1,0 +1,14 @@
+<style>
+
+</style>
+
+<input id="rangeVal" type="number" readonly>%
+<p>decimal: <span id="eks"></span></p>
+<input id="inp" type="range" min="1" max="99" oninput="convert()">
+<script>
+function convert() {
+var x = document.getElementById("inp").value;
+document.getElementById("rangeVal").value=x;
+document.getElementById("eks").innerHTML=x/100;
+}
+</script>
