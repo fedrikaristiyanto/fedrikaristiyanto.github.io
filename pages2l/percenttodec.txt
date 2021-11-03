@@ -1,3 +1,4 @@
+<html>
 <style>
 
 </style>
@@ -12,3 +13,4 @@ document.getElementById("rangeVal").value=x;
 document.getElementById("eks").innerHTML=x/100;
 }
 </script>
+</html>
