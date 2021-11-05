@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<div class="persegi">
+<canvas width="150" height="150" id="persegi"></canvas><br>
+<br>
+<input id="inpSq" type="number" oninput="funcSq(this.value)">
+<br>
+<label>area:</label><br>
+<textarea id="eksSq" readonly></textarea>
+
+<br><br>
+
+<label>perimeter:</label><br>
+<textarea id="eksP" readonly></textarea>
+
+</div>
+<script>
+// persegi
+var c=document.getElementById("persegi");
+var ctx=c.getContext('2d');
+ctx.beginPath();
+ctx.rect(20,20,100,100);
+ctx.stroke();
+
+// function
+function funcSq(valueinp){
+var sq = document.getElementById("eksSq").value=valueinp + "*" + valueinp + "=" + valueinp * valueinp;
+var P = document.getElementById("eksP").value=4 + "*" + valueinp + "=" + valueinp * 4;
+}
+</script>
+</body>
+</html>
