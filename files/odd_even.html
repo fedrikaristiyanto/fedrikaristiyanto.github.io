@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+<h3>bilangan ganjil & genap hingga 100</h3>
+<label>bil. ganjil</label><br>
+<textarea id="odd" style="height:150px;" readonly></textarea><br><br>
+
+<label>bil. genap</label><br>
+<textarea id="even" style="height:150px;" readonly></textarea>
+
+<script>
+let text ="";
+for (let i = 1; i < 100; i += 2) {
+ text += i + ", ";
+}
+document.getElementById("odd").value=text;
+
+let text2="";
+for (let j=2; j <= 100; j+=2) {
+ text2 += j + ", ";
+}
+document.getElementById("even").value=text2;
+
+</script>
+</body>
+</html>
