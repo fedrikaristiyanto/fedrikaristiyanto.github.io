@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/yuciboziju/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head><title>convert number to hexadecimal</title></head>
+<body>
+<input id="inp" type="number">
+<button onclick="cvt()">btn</button>
+<p id="eks"></p>
+<script>
+function cvt(){
+let x = Number(document.getElementById("inp").value);
+let y = x.toString(16);
+document.getElementById("eks").innerHTML=y;
+}
+</script>
+</body>
+</html>
