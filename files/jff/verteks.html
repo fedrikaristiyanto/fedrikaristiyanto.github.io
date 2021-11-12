@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/zavemaguzo/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<body>
+
+<form>
+<textarea id="inp" placeholder="masukkan kata2 mis: 'I love You'"></textarea>
+<br>
+<input type="button" onclick="mf()" value="set vertical">
+<input type="reset" value="reset">
+
+</form>
+<p id="eks" style="text-align:center;"></p>
+
+
+<script>
+function mf() {
+let t = document.getElementById("inp").value;
+
+let text = "";
+for (let x of t) {
+  text += x + "<br>";
+}
+
+document.getElementById("eks").innerHTML = text.toUpperCase();
+}
+</script>
+</body>
+</html>
