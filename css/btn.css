@@ -1,5 +1,10 @@
 button {
-background-color:blue;color:white;border:outset;
+ background-color:blue;color:white;border:outset;
 padding:15px;text-align:center;
 border-radius:12px;
 }
+
+button:hover{
+background-color:DodgerBlue;
+}
+button:active{}
