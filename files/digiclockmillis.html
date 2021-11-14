@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/pukifoqaza/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<body onload="startTime()">
+
+<h2>DigiClock With MilliSeconds</h2>
+
+<div id="konten"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  let ms = today.getMilliseconds();
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  
+document.getElementById('konten').innerHTML =  h + ":" + m + ":" + s + ":" + ms;
+  setTimeout(startTime, 1);
+}
+
+function checkTime(dig) {
+  if (dig < 10) {dig = "0" + dig};
+  return dig;
+}
+</script>
+
+</body>
+</html>
