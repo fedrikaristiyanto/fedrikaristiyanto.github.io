@@ -1,6 +1,6 @@
 var i = 0;
-var txt = "I Love You";
-var speed = 250;
+var txt = "aku mencintaimu...";
+var speed = 500;
 
 function ketik() {
   if (i < txt.length) {
