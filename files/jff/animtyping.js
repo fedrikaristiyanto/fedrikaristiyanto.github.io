@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'I ...Love...You...';
+var txt = I Love You;
 var speed = 100;
 
 function ketik() {
