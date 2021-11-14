@@ -2,14 +2,14 @@ button {
  background-color:blue;color:white;border:outset;
  padding:15px;text-align:center;
 border-radius:12px;
-box-shadow:0 10px silver;
+box-shadow: 8px 8px silver;
 }
 
 button:hover{
  background-color:DodgerBlue;
 }
 button:active{
-background-color:DodgerBlue;
-box-shadow: 0 6px silver;
-transform: translateY(5px);
+background-color:blue;
+box-shadow: 6px 6px silver;
+transform: translate(5px,5px);
 }
