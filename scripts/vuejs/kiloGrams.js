@@ -4,10 +4,6 @@ var vm = new Vue({
                kilograms : 0,
                grams:0
             },
-            methods: {
-            },
-            computed :{
-            },
             watch : {
                kilograms:function(val) {
                   this.kilograms = val;
