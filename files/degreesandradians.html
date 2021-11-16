@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by anonymous (http://jsbin.com/wazaqelosu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+    <head>
+        <title>degrees and radians converter</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        
+    </head>
+    <body>
+    <div id="convert">
+      Deg : <input type = "text" v-model = "degrees"> <br> Rads : <input type = "text" v-model = "radians">
+        
+        </div>
+        
+        <script>
+            var vm = new Vue({
+            el: '#convert',
+            data: {
+            degrees: 0,
+            radians: 0
+             },
+             watch: {
+              degrees: function (value) { 
+              this.degrees=value;
+              this.radians =value*Math.PI/180;
+              },
+              radians: function(value) {
+                 this.degrees=value*180/Math.PI;
+                  this.radians=value;
+              }
+
+              } 
+              })
+            
+        </script>
+    </body>
+</html>
