@@ -22,7 +22,7 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   
-document.getElementById('konten').innerHTML =  h + ":" + m + ":" + s + ":" + ms;
+document.getElementById('konten').innerHTML =  h + ":" + m + ":" + s + ":" + "<small>" + ms + "</small>";
   setTimeout(startTime, 1);
 }
 
