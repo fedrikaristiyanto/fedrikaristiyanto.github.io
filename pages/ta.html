@@ -1,0 +1,33 @@
+<html>
+<body>
+<form>
+Menghitung luas, keliling, dan tinggi segitiga sama sisi jika diketahui sisinya. <br>
+<label>diket sisi:</label>
+<input id="inp" size="6" placeholder="input num">
+<input type="button" value="button" onclick="tr()"><br>
+<label>luas</label>
+<input id="area" readonly><br>
+<label>k</label>
+<input id="k" readonly><br>
+<label>t</label>
+<input id="t" readonly>
+</form>
+<script>
+function tr(){
+var n = document.getElementById("inp").value;
+var a = n**2*Math.sqrt(3)/4;
+var kl = 3*n;
+var tg = n*Math.sqrt(3)/2;
+
+if (isNaN(n) || n < 1) {
+ alert("input tdk di acc");
+  }
+else {
+ document.getElementById("area").value=a;
+ document.getElementById("k").value=kl;
+document.getElementById("t").value=tg;
+}
+}
+</script>
+</body>
+</html>
