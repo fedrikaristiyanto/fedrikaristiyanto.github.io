@@ -1,3 +1,3 @@
 function clear(){
-document.getElementById("inp").value="";
+document.getElementById('inp').value='';
 }
