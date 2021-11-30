@@ -5,27 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>factorial</title>
   <link href="/css/inputnum.css" rel="stylesheet" type="text/css" />
-
-<link href="/css/btn.css" rel="stylesheet" type="text/css" />
-
+  <link href="/css/btn.css" rel="stylesheet" type="text/css" />
 
   <script src="https://unpkg.com/mathjs@9.5.0/lib/browser/math.js"></script>
 
   <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+  </script>
+  <script src="/scripts/clearinput.js"></script>
 
 
 </head>
 <body>
 <p>\(x!\)</p>
-<input type="number" id="in"></input>!
+<input type="number" id="inp"></input>!
 <br><br>
 <button onclick="ct()">hitung</button>
 <p id="output"></p>
 <script>
 function ct() {
-const x = document.getElementById("in").value;
+const x = document.getElementById("inp").value;
 document.getElementById("output").innerHTML=math.factorial(x);
 }
 </script>
