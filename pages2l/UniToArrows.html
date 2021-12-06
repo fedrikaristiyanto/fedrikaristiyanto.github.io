@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>convert unicode to arrow symbols</title>
+<style>
+#inp {
+text-align:right;
+}
+#O { font-size:32px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<form>
+<input type="number" id="inp" placeholder="input angka antara 8592 - 8703">
+<input type="button" value="convert" onclick="myf()">
+<input type="reset" value="clear">
+<br>
+<input id="O" size="4" readonly>
+</form>
+<script>
+function myf(){
+var eks = document.getElementById("inp").value;
+if (eks < 8592 || eks > 8703){
+alert("input harus angka\ndan angka harus antara 8592 hingga 8703")
+}
+else {
+document.getElementById("O").value=String.fromCharCode(eks);}
+}
+</script>
+</body>
+</html>
