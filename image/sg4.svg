@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500" width="500" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 200" width="200" height="200">
   <title>sg4</title>
-  <rect width="70" height="70" x="170" y="60" style="fill:silver;stroke:black;" />
+  <rect width="100" height="100" x="100" y="100" style="fill:silver;stroke:black;" />
 </svg>
