@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menghitung hari antara dua tanggal</title>
+    </head>
+    <body>
+<label>from</label>
+        <input type="date" id="dt1"><br>
+<label>to</label>
+        <input type="date" id="dt2">
+        <input type="button" value="hitung" onclick="mfu()">
+<p id="O"></p>
+    <script id="jsbin-javascript">
+function mfu() {
+var d1 = document.getElementById("dt1").value;
+var d2 = document.getElementById("dt2").value;
+
+var dsatu = new Date(d1);
+var ddua = new Date(d2);
+
+var sel = ddua.getTime()-dsatu.getTime();
+var Ot = sel / (1000*60*60*24);
+document.getElementById("O").innerHTML=Ot + " hari";
+}
+</script>
+</body>
+</html>
