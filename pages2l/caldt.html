@@ -20,7 +20,10 @@ var ddua = new Date(d2);
 
 var sel = ddua.getTime()-dsatu.getTime();
 var Ot = sel / (1000*60*60*24);
-document.getElementById("O").innerHTML=Ot + " hari";
+if (isNaN(Ot)) {
+document.getElementById("O").innerHTML="lengkapi tanggal";}
+else{
+document.getElementById("O").innerHTML=Ot + " hari";}
 }
 </script>
 </body>
