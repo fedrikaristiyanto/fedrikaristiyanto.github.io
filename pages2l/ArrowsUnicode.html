@@ -11,6 +11,9 @@ text-align:right;
 text-align:center;
 }
 </style>
+
+<script src="https://fedrikaristiyanto.github.io/scripts/listingArrows.js"></script>
+
 </head>
 <body>
 <form>
@@ -20,6 +23,12 @@ text-align:center;
 <br>
 <input id="O" size="4" readonly>
 </form>
+atau langsung <button onclick="listingArrows()">list</button> aja <br>
+
+<div id="list">
+list
+</div>
+
 <script>
 function myf(){
 var eks = document.getElementById("inp").value;
