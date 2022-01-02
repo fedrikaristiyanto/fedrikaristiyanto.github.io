@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<canvas id="cnva" width="250" height="50"></canvas>
+
+<button onclick="mf()">open img</button>
+
+
+
+<script>
+function mf(){
+  
+
+var canvas  = document.getElementById("cnva");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Times New Roman";
+ctx.fillText("Hello World", 5, 50);
+ctx.fillStyle = "#0000ff";
+var dataUrl = canvas.toDataURL();
+window.open(dataUrl, "toDataURL() image", "width=500, height=200");
+
+}
+</script>
+</body>
+</html>
