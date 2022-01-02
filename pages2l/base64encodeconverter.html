@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>base64 encode converter</h2>
+
+<textarea id="inp"></textarea>
+<button onclick="cte()">conver to encode</button>
+
+
+<p>encode: <span id="demo"></span></p>
+
+<script>
+function cte(){
+let text = document.getElementById("inp").value;
+let encoded = window.btoa(text);
+
+document.getElementById("demo").innerHTML = encoded;}
+</script>
+
+</body>
+</html>
