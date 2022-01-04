@@ -14,14 +14,15 @@
 <button onclick="cte()">conver to encode</button>
 
 
-<p>encode: <span id="demo"></span></p>
+<p>encode:</p>
+<textarea id="demo"></textarea>
 <p>jika ingin membukanya di kolom url, begini formatnya <i>data:text/html;base64,diikuti dengan encode</i>
 <script>
 function cte(){
 let text = document.getElementById("inp").value;
 let encoded = window.btoa(text);
 
-document.getElementById("demo").innerHTML = encoded;}
+document.getElementById("demo").value = encoded;}
 </script>
 
 </body>
