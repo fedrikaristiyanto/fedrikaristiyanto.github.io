@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>bitwise</title>
 <style>
- body {
+ * {
 font-family:Courier New;
 }
  .inp {
@@ -30,9 +30,9 @@ width:100px;
 
 <br>
 <input class="inp" id="A3" type="number">
-<input>
-<button></button>
-<input>
+<input class="inp" id="B3" type="number">
+<button onclick="C3.value=A3.value ^ B3.value;">↲</button>
+<input id="C3" readonly>
 
 </body>
 </html>
