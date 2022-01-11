@@ -16,7 +16,7 @@ width:100px;
 
 </head>
 <body>
-<h3>Bitwise AND</h3>
+<h3>Bitwise AND (&)</h3>
 <input class="inp" id="A" type="number">AND
 <input class="inp" id="B" type="number">
 <button onclick="C.value=A.value & B.value;">↲</button><br>
@@ -27,14 +27,19 @@ width:100px;
 <input class="inp" id="A2" type="number">OR
 <input class="inp" id="B2" type="number">
 <button onclick="C2.value=A2.value | B2.value;">↲</button><br>
-<input id="C2" readonly>
+<input class="inp" id="C2" readonly>
 
 <br>
 <h3>Bitwise XOR</h3>
 <input class="inp" id="A3" type="number">XOR
 <input class="inp" id="B3" type="number">
 <button onclick="C3.value=A3.value ^ B3.value;">↲</button><br>
-<input id="C3" readonly>
+<input class="inp" id="C3" readonly>
+
+<br>
+<input class="inp" id="D" type="number">
+<button onclick="E.value= ~ D.value;">↲</button>
+<input class="inp" id="E" readonly>
 
 </body>
 </html>
