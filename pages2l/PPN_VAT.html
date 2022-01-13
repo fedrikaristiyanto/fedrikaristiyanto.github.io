@@ -11,9 +11,9 @@
 <h2>TAX (VAT or GST) Calculator</h2>
 
 Price: <input type="number" ng-model="price" placeholder="input price"><br>
-Tax-rate: <input type="number" ng-model="taxrate" placeholder="input tax rate">%
+Tax-rate: <input style="width:50px;" type="number" ng-model="taxrate" placeholder="input tax rate">%
 <p>Tax (Price * Tax rate): {{price * taxrate / 100}}</p>
-<p>Price + Tax: {{ price + (price*taxrate/100)}}</p>
+<p>Price + Tax: {{ price + (price*taxrate/100) | number}}</p>
 
 </div>
 Related page: <a href="/pages/math.html">Mathematics</a>
