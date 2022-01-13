@@ -12,10 +12,11 @@
 
 Price: <input type="number" ng-model="price" placeholder="input price"><br>
 Tax-rate: <input style="width:50px;" type="number" ng-model="taxrate" placeholder="input tax rate">%
-<p>Tax (Price * Tax rate): {{price * taxrate / 100}}</p>
+<p>Tax (Price * Tax rate): {{price * taxrate / 100 | number}}</p>
 <p>Price + Tax: {{ price + (price*taxrate/100) | number}}</p>
 
 </div>
+See also: <a href="/pages2l/discount.html">kalkulator diskon</a><br>
 Related page: <a href="/pages/math.html">Mathematics</a>
 </body>
 </html>
