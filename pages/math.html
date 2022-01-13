@@ -45,7 +45,7 @@ window.history.back();
 }
 
 
-// script animasi kubus
+// script gambar kubus
 function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
   canvas.parent("kubus");
@@ -53,7 +53,8 @@ function setup() {
 
 function draw() {
   background("silver");
-  rotateY(millis()/500);
+  rotateX(100);
+  rotateY(50);
   box(50);
 }
 
