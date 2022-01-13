@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
 <body>
 
 <div data-ng-app="" data-ng-init="price=0;taxrate=10;">
@@ -13,6 +15,6 @@ Tax-rate: <input type="number" ng-model="taxrate">%
 <p>Price + Tax: {{ price + (price*taxrate/100)}}</p>
 
 </div>
-
+Related page: <a href="/pages/math.html">Mathematics</a>
 </body>
 </html>
