@@ -49,12 +49,10 @@ window.history.back();
 function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
   canvas.parent("kubus");
-  img = loadImage("/image/emoticons/Sm.png")
 }
 
 function draw() {
   background("white");
-  noStroke();
   rotateY(millis()/500);
   texture(img);
   box(50);
