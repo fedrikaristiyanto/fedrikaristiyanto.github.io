@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div data-ng-app="" data-ng-init="price=0;taxrate=10;">
+
+<h2>TAX (VAT or GST) Calculator</h2>
+
+Price: <input type="number" ng-model="price" placeholder="input price"><br>
+Tax-rate: <input type="number" ng-model="taxrate">%
+<p>Tax (Price * Tax rate): {{price * taxrate / 100}}</p>
+<p>Price + Tax: {{ price + (price*taxrate/100)}}</p>
+
+</div>
+
+</body>
+</html>
