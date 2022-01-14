@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>VAT calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
@@ -12,8 +13,8 @@
 
 Price: <input type="number" ng-model="price" placeholder="input price"><br>
 Tax-rate: <input style="width:50px;" type="number" ng-model="taxrate" placeholder="input tax rate">%
-<p>Tax (Price * Tax rate): {{price * taxrate / 100 | number}}</p>
-<p>Price + Tax: {{ price + (price*taxrate/100) | number}}</p>
+<p>Tax (Price * Tax rate): <b> {{price * taxrate / 100 | number}} </b></p>
+<p>Price + Tax: <b> {{ price + (price*taxrate/100) | number}} </b></p>
 
 </div>
 See also: <a href="/pages2l/discount.html">kalkulator diskon</a><br>
