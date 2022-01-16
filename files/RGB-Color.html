@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+font-size:xx-large;
+letter-spacing:4px;
+color:silver;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+</style>
+<script>
+function rgb() {
+  var x = document.getElementById("ex").style.color =
+  "rgb("+document.getElementById("red").value+","
+  +document.getElementById("green").value+","
+  +document.getElementById("blue").value+")";
+document.getElementById("rgbValue").value=x;
+}
+</script>
+</head>
+<body>
+<h1 id="ex">RGB</h1>
+<br>
+                
+         <input id="rgbValue" type="text" readonly>  <br>
+                
+R<input id="red" type="range" min="0" max="255" name="r" oninput="rgb()"><br>
+           
+G<input id="green" type="range"  min="0" max="255" name="g" oninput="rgb()"><br>
+            
+                
+                B<input id="blue" type="range" min="0" max="255" name="b" oninput="rgb()"><br>
+
+</body>
+</html>
