@@ -71,9 +71,9 @@ var ar = Number(document.getElementById("r").value);
 var ji = Number(document.getElementById("g").value);
 var bi = Number(document.getElementById("b").value);
 
-var x1 = ar.toString(16).toUpperCase();
-var x2 = ji.toString(16).toUpperCase();
-var x3 = bi.toString(16).toUpperCase();
+var x1 = ar.toString(16).toUpperCase().padStart(2,0);
+var x2 = ji.toString(16).toUpperCase().padStart(2,0);
+var x3 = bi.toString(16).toUpperCase().padStart(2,0);
 
 var heks = document.getElementById("demo").value = "#" + x1 + x2 + x3;
 document.getElementById("ou").style.backgroundColor=heks;
