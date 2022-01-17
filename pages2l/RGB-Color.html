@@ -43,5 +43,49 @@ G<input id="green" type="range"  min="0" max="255" name="g" oninput="rgb()"><br>
 Menggunakan rgb untuk mewarnai teks misalnya, contoh penggunaan di html tag paragraf: <br>
 <code style="background-color:gray;color:white;padding:2px;">&#60;p style="color:rgb(0,0,255);"&#62;teks&#60;/p&#62;</code>
 </p>
+
+
+<br>
+<p>convert rgb ke triplet hex atau hex color</p>
+<-- rgb ke triplet hex converter -->
+<form>
+<input type="range" min="0" max="255" id="r" oninput="mf()">
+<input type="range" min="0" max="255" id="g" oninput="mf()">
+<input type="range" min="0" max="255" id="b" oninput="mf()">
+
+<br>
+<input type="reset" value="reset">
+
+<input id="demo" readonly>
+</form>
+
+
+<textarea id="ou" readonly></textarea>
+
+
+<script>
+function mf(){
+var ar = Number(document.getElementById("r").value);
+var ji = Number(document.getElementById("g").value);
+var bi = Number(document.getElementById("b").value);
+
+var x1 = ar.toString(16).toUpperCase();
+var x2 = ji.toString(16).toUpperCase();
+var x3 = bi.toString(16).toUpperCase();
+
+var heks = document.getElementById("demo").value = "#" + x1 + x2 + x3;
+document.getElementById("ou").style.backgroundColor=heks;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
