@@ -72,5 +72,13 @@ background-color:#373759;
 <br>
 <button id="bt">Light/Dark Mode</button>
 
+<script>
+$(document).ready(function(){
+  $("#bt").click(function(){
+    $("*").toggleClass("LightMode");
+  });
+});
+</script>
+
 </body>
 </html>
