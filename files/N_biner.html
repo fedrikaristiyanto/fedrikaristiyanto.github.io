@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dec to bin</title>
+</head>
+<body>
+
+<input id="inp" type="number" onchange="mf()">
+<p>biner:<br><span id="output"></span></p>
+<script>
+function mf() {
+
+let x = parseInt(document.getElementById("inp").value);
+let x2 =(x>>>0).toString(2);
+let bin;
+
+switch (x2.length){
+
+case 1:
+ bin ="0000000000000000000000000000000"+x2;
+ break;
+ 
+case 2:
+ bin ="000000000000000000000000000000"+x2;
+ break;
+ 
+case 3:
+ bin ="00000000000000000000000000000"+x2;
+ break;
+ 
+case 4:
+ bin ="0000000000000000000000000000"+x2;
+ break;
+ 
+case 5:
+ bin ="000000000000000000000000000"+x2;
+ break;
+ 
+case 6:
+ bin ="00000000000000000000000000"+x2;
+ break;
+ 
+case 7:
+ bin ="0000000000000000000000000"+x2;
+ break;
+ 
+case 8:
+ bin ="000000000000000000000000"+x2; //24
+ break;
+ 
+case 9:
+ bin ="00000000000000000000000"+x2;
+ break;
+ 
+case 10:
+ bin ="0000000000000000000000"+x2;
+ break;
+ 
+case 11:
+ bin ="000000000000000000000"+x2;
+ break;
+
+case 12:
+ bin ="00000000000000000000"+x2;
+ break;
+ 
+case 13:
+ bin ="0000000000000000000"+x2;
+ break;
+
+case 14:
+ bin ="000000000000000000"+x2;
+ break;
+
+case 15:
+ bin ="00000000000000000"+x2;
+ break;
+
+case 16:
+ bin ="0000000000000000"+x2; //16
+ break;
+
+case 17:
+ bin ="000000000000000"+x2;
+ break;
+
+case 18:
+ bin ="00000000000000"+x2;
+ break;
+
+case 19:
+ bin ="0000000000000"+x2;
+ break;
+
+case 20:
+ bin ="000000000000"+x2;
+ break;
+
+case 21:
+ bin ="00000000000"+x2;
+ break;
+
+case 22:
+ bin ="0000000000"+x2;
+ break;
+
+case 23:
+ bin ="000000000"+x2;
+ break;
+
+case 24:
+ bin ="00000000"+x2; //8
+ break;
+
+case 25:
+ bin ="0000000"+x2;
+ break;
+
+case 26:
+ bin ="000000"+x2;
+ break;
+
+case 27:
+ bin ="00000"+x2;
+ break;
+
+case 28:
+ bin ="0000"+x2;
+ break;
+
+case 29:
+ bin ="000"+x2;
+ break;
+
+case 30:
+ bin ="00"+x2;
+ break;
+
+case 31:
+ bin ="0"+x2;
+ break;
+
+default:
+ bin = x2;
+ }
+ 
+if (x < -1 || x > 2147483647)
+
+{
+    alert("input not valid / exceeded the limit");
+    }
+
+else{
+document.getElementById("output").innerHTML=bin;
+}
+}
+</script>
+</body>
+</html>
