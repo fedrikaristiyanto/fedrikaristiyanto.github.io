@@ -1,0 +1,1 @@
+File yang tidak termasuk dlm folder di subfolder **scripts** ini adalah pure JavaScript
