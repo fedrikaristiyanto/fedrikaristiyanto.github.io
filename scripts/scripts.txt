@@ -1,1 +1,1 @@
-File yang tidak termasuk dlm subfolder adalah pure JavaScript
+File di luar subfolder adalah pure JavaScript
