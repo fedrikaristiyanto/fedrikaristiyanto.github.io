@@ -33,9 +33,11 @@ background-color:yellow;
 <div class="konten">
  \( \sqrt[3]{x} \)
 <br><br>
+<form>
 <input id="DM" type="number" placeholder="input number"><br><br>
-<button onclick="eks.innerHTML=Math.cbrt(DM.value)">cube root</button>
-<p id="eks"></p>
+<button onclick="eks.value=Math.cbrt(DM.value)">cube root</button><br><br>
+<input id="eks" type="number" readonly>
+</form>
 </div>
 </body>
 </html>
