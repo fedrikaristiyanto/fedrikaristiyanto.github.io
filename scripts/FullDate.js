@@ -1,4 +1,5 @@
 let tgl = new Date().getDate();
+let tahun = new Date().getFullYear();
 let bulan;
 switch (new Date().getMonth()){
 case 0:
@@ -38,4 +39,4 @@ case 11:
 bulan = "Desember";
 break;
 }
-document.getElementById("Month").innerHTML=tgl + " " + bulan;
+document.getElementById("fullDate").innerHTML=tgl + " " + bulan + " " + tahun;
