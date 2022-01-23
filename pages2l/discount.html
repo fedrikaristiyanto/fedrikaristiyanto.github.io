@@ -22,7 +22,7 @@
  function myFunction() {
 var price = document.getElementById("hrg").value;
 var discount = document.getElementById("diskon").value;
-var N = document.getElementById("total").innerHTML= price - (price * discount / 100);
+var N = document.getElementById("total").innerHTML= price - (price * discount / 100).toLocaleString("id-ID", {style:"currency", currency:"IDR"});
 }
 </script>
 </body>
