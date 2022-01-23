@@ -1,5 +1,5 @@
 let bulan;
-switch (new Date().getMonth(){
+switch (new Date().getMonth()){
 case 0:
 bulan = "Januari";
 break;
