@@ -34,7 +34,7 @@ case 10:
 bulan = "Nopember";
 break;
 case 11:
-bulan = "Desember;
+bulan = "Desember";
 break;
 }
 document.getElementById("Month").innerHTML=bulan;
