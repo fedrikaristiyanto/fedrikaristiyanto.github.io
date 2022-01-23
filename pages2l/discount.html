@@ -20,8 +20,8 @@
 <p>harga setelah diskon: <span id="total">......</span></p>
 <script>
  function myFunction() {
-var price = document.getElementById("hrg").value;
-var discount = document.getElementById("diskon").value;
+var price = Number(document.getElementById("hrg").value);
+var discount = Number(document.getElementById("diskon").value);
 var N = document.getElementById("total").innerHTML= price - (price * discount / 100).toLocaleString("id-ID", {style:"currency", currency:"IDR"});
 }
 </script>
