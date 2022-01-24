@@ -1,3 +1,4 @@
+function datefunc() {
 let tgl = new Date().getDate();
 let tahun = new Date().getFullYear();
 let bulan;
@@ -40,3 +41,4 @@ bulan = "Desember";
 break;
 }
 document.getElementById("fullDate").innerHTML=tgl + " " + bulan + " " + tahun;
+}
