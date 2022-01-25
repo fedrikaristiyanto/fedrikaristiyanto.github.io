@@ -1,5 +1,5 @@
-function AskOddEven(){
+function GanjilGenap(){
 var number = parseInt(document.getElementById("inp").value);  
-var answer = (number % 2 == 0) ? ' adalah bilangan GENAP' : ' adalah bilangan GANJIL';  
+var answer = (number % 2 == 1) ? ' adalah bilangan GANJIL' : ' adalah bilangan GENAP';  
 document.getElementById("outp").innerHTML=number + answer;
 }
