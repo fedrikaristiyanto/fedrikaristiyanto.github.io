@@ -9,9 +9,13 @@
 <body>
 <p>masukkan angka untuk mengetahui angka tsb. Bilangan ganjil atau genap</p>
 <br>
-<input type="number" id="inp" onchange="GanjilGenap()"><br><br>
+<form>
+<input type="number" id="inp"><br><br>
 <textarea id="outp" readonly></textarea>
-
+<br>
+<input type="button" onclick="GanjilGenap()" value="Cek">
+<input type="reset" value="clear">
+</form>
 </body>  
 </html>  
 
