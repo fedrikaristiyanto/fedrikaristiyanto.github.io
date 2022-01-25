@@ -90,6 +90,22 @@ font-family:"Fredericka the Great";
 </div>
 <br>
 
+<h4 id="thx"></h4>
+<script>
+var i = 0;
+var txt = "trims tlah berkunjung .... :)";
+var speed = 500;
+
+function ketik() {
+  if (i < txt.length) {
+    document.getElementById("thx").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(ketik, speed);
+  }
+}
+
+</script>
+
    </section>
 
 <footer>
