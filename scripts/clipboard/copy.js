@@ -1,1 +1,1 @@
-var clipboard = new Clipboard(".className");
+var clipboard = new Clipboard("query selector");
