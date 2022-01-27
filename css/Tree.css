@@ -1,6 +1,6 @@
 body{
 background-image: url('/image/png/Tree.png');
-background-repeat: repeat-x;
-background-position:bottom;
+background-repeat: no-repeat;
+background-position:right bottom;
 background-color:skyblue;
 }
