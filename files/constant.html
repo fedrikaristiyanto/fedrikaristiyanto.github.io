@@ -15,6 +15,9 @@
 body {
 background-color:#f3f3f3;
 }
+#konstanta {
+background-image: url('/image/jpg/notebook.jpeg');
+}
 </style>
 
 </head>
@@ -22,6 +25,7 @@ background-color:#f3f3f3;
 
 <div id="konstanta">
 <p id="eu"></p>
+<p id="fi"></p>
 </div>
 
 <script>
@@ -35,7 +39,7 @@ document.getElementById("eu").innerHTML="$$" + tex + "=" + eva + "$$";
 const phi = 'phi';
 const TEX = math.parse(phi).toTex();
 const ev = math.evaluate(phi);
-document.writeln("$$" + "\\varphi" + "=" + ev + "$$");
+document.getElementById("fi").innerHTML="$$" + "\\varphi" + "=" + ev + "$$";
   
 // pi constant
 const pi = 'pi';
