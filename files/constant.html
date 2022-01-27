@@ -20,13 +20,16 @@ background-color:#f3f3f3;
 </head>
 <body>
 
+<div id="konstanta">
+<p id="eu"></p>
+</div>
 
 <script>
 // euler 
 const euler = 'e';
 const tex = math.parse(euler).toTex();
 const eva = math.evaluate(euler);
-document.writeln("$$" + tex + "=" + eva + "$$");
+document.getElementById("eu").innerHTML="$$" + tex + "=" + eva + "$$";
   
 // golden ratio
 const phi = 'phi';
