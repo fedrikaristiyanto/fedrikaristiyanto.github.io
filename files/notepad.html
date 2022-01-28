@@ -8,7 +8,7 @@
 
     <script>
 
-		function NP() {
+	function NP() {
 
             var userInput = document.getElementById("myText").value;
 			
@@ -17,12 +17,17 @@
         }
 
     </script>
+<style>
+textarea {
+ background-image:url('/image/jpg/notebook.jpeg');
+}
+</style>
 </head>
 <body>
 
-    <textarea id="myText" rows="4" cols="50">
-    ...
-    </textarea>
+<textarea id="myText" rows="4" cols="45" placeholder="write text">
+
+</textarea>
 
     <button type="button" onclick="NP();">Click to Save</button>
 	
