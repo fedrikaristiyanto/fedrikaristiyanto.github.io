@@ -1,24 +1,30 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-    <meta charset="utf-8">  
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>notepad</title>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
 
-    <title>Notepad</title>  
-</head>  
-<body>  
-<textarea id="wr" onchange="myf()" placeholder="write..."></textarea><br>
-<textarea id="inp" readonly>...</textarea>
-<a href='#' id="link" download="filename.txt">save</a>  
-<script>  
-function myf() {
-var t1 = document.getElementById("wr").value;
-var teks = document.getElementById("inp").innerHTML=t1;
-var sv = new Blob([teks],  
-             {type: 'text/plain'});  
-link.href = URL.createObjectURL(sv);
-}
-</script>  
-</body>  
-</html>  
+		function NP() {
+
+            var userInput = document.getElementById("myText").value;
+			
+            var blob = new Blob([userInput], { type: "text/plain" });
+            saveAs(blob, "filename.txt");
+        }
+
+    </script>
+</head>
+<body>
+
+    <textarea id="myText" rows="4" cols="50">
+    ...
+    </textarea>
+
+    <button type="button" onclick="NP();">Click to Save</button>
+	
+</body>
+</html>
