@@ -8,11 +8,11 @@
     <title>Notepad</title>  
 </head>  
 <body>  
-<textarea id="inp" oninput="myf()">...</textarea>
-<a href='#' id="link" download="file.txt">save</a>  
+<textarea id="inp" oninput="myf()" value="txt"></textarea>
+<a href='#' id="link" download="filename.txt">save</a>  
 <script>  
 function myf() {
-var teks = document.getElementById("inp").innerHTML;
+var teks = document.getElementById("inp").value;
 var sv = new Blob([teks],  
              {type: 'text/plain'});  
 link.href = URL.createObjectURL(sv);
