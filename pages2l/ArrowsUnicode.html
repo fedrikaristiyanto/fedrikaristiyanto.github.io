@@ -22,7 +22,7 @@ text-align:center;
 <input type="number" id="inp" placeholder="input angka antara 8592 - 8703">
 <input type="button" value="convert" onclick="myf()">
 <br>
-<input id="O" size="4" readonly>
+<input id="O" size="4" oncopy="oke(this.value) readonly>
 <input type="button" class="bt" data-clipboard-target="#O" value="salin/copy symbol">
 </form>
 
@@ -43,6 +43,12 @@ document.getElementById("O").value=String.fromCharCode(eks);}
 }
 
 var clipboard = new Clipboard(".bt");
+
+function oke(val) {
+if (val != "") {
+alert("copied");
+}
+}
 </script>
 </body>
 </html>
