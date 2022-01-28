@@ -2,17 +2,21 @@
 <html>  
 <head>  
     <meta charset="utf-8">  
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Notepad</title>  
 </head>  
 <body>  
 <textarea id="inp" oninput="myf()"></textarea>
-<a href='#' id="link" download>save</a>  
-    <script>  
-function myf(){
+<a href='' id="link" download>save</a>  
+<script>  
+function myf() {
 var teks = document.getElementById("inp").value;
-        let conv = new Blob([teks],  
-                { type: 'text/plain' });  
-        link.href = URL.createObjectURL(conv);  }
+var sv = new Blob([teks],  
+             {type: 'text/plain'});  
+link.href = URL.createObjectURL(sv);
+}
 </script>  
 </body>  
 </html>  
