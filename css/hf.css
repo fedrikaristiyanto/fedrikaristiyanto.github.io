@@ -4,6 +4,7 @@
 }
 
 #footer {
- background-color:#20b2aa;
+ background-color:rgba(32,178,170,0.4);
+ color:black;
  padding:5px;
 }
