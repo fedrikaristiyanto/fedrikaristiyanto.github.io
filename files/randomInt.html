@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<title>random num</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+<form>
 range 1 - <input type="number" id="inp" value="10" placeholder="mis. random dadu input saja 6"><br>
 <input id="outp" readonly>
-<button onclick="myFunc()">?</button>
+<input type="button" onclick="myFunc()" value="random">
+<input type="reset" value="reset">
+</form>
 <script>
 function myFunc(){
  let limit = document.getElementById("inp");
