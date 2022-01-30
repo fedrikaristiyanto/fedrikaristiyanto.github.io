@@ -9,7 +9,12 @@
 function myFunc(){
  let limit = document.getElementById("inp");
  let random = Math.floor((Math.random()*limit.value)+1);
+if (limit.value < 2) {
+alert("input setidaknya lebih besar dari 1");
+}
+else {
 document.getElementById("outp").value=random;
+}
 }
 </script>
 </body>
