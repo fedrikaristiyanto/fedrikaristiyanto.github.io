@@ -1,2 +1,16 @@
+<!DOCTYPE html>
 <html>
+<head></head>
+<body>
+<input type="number" id="inp">
+<input id="outp" readonly>
+<button onclick="myFunc()">?</button>
+<script>
+function myFunc(){
+ let p = document.getElementById("inp");
+let random = Math.floor((Math.random()*p.value)+1));
+document.getElementById("outp").value=random;
+}
+</script>
+</body>
 </html>
