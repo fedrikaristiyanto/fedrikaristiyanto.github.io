@@ -1,0 +1,1 @@
+Math.floor((Math.random() * max_limit) + 1);
