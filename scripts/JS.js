@@ -14,3 +14,9 @@ document.getElementById("outp").value=number + answer;
 function MyScreenResolution() {
  document.write('Your screen resolution: ' + screen.width+' x '+screen.height);
 }
+
+// sayHello
+function sayHello() {
+var user = prompt("Please enter your name!");
+document.write("<h1>Hello " + user + "</h1>");
+}
