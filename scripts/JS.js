@@ -12,7 +12,7 @@ document.getElementById("outp").value=number + answer;
 
 // what is my screen resolution
 function MyScreenResolution() {
- document.write('Your screen resolution: ' + screen.width+' x '+screen.height);
+ document.write('<h1>Your screen resolution: ' + screen.width+' x '+screen.height + '</h1>');
 }
 
 // sayHello
