@@ -7,4 +7,6 @@
  background-color:rgba(32,178,170,0.4);
  color:black;
  padding:5px;
+position:fixed;
+bottom:0;
 }
