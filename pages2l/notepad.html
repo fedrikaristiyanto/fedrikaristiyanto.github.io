@@ -12,7 +12,7 @@
 
             var userInput = document.getElementById("myText").value;
 			
-            var blob = new Blob([userInput], { type: "text/plain" });
+            var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "filename.txt");
         }
 
