@@ -1,4 +1,4 @@
-let x; let y; let z;
+let x, y, z;
 x = 0b10; // binary
 y = 0o10; // octal
 z = 0x10; // hex
