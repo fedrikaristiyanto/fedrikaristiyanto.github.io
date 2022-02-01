@@ -6,4 +6,4 @@ const Me = {
  }
 };
 
-document.getElementById("me").innerHTML= Me.Nama_lengkap();
+document.getElementById("Me").innerHTML= Me.Nama_lengkap();
