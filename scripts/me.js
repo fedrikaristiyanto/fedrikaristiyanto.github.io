@@ -5,5 +5,4 @@ const Me = {
    return this.Nama_depan + " " + this.Nama_belakang;
  }
 };
-
 document.getElementById("Me").innerHTML= Me.Nama_lengkap();
