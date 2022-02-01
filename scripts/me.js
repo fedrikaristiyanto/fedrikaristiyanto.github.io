@@ -1,1 +1,9 @@
-document.write(String.fromCharCode(0x46,0x65,0x64,0x72,0x69,0x6b))
+const Me = {
+  Nama_depan:"Fedrik",
+  Nama_belakang:"Aristiyanto",
+  Nama_lengkap: function() {
+   return this.Nama_depan + " " + this.Nama_belakang;
+ }
+};
+
+document.getElementById("me").innerHTML= Me.Nama_lengkap();
