@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="200"
+style="border:2px solid black;">
+Your browser does not support the canvas element.
+</canvas>
+
+<p id="dta"></p>
+
+
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="50px Times New Roman";
+ctx.fillStroke = "blue";
+ctx.textAlign = "center";
+ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+var dataurl = canvas.toDataURL('image/png', 1.0);
+document.getElementById("dta").innerHTML=dataurl;
+</script>
+
+</body>
+</html>
+
+
+
+
+
