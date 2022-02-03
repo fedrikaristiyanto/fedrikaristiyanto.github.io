@@ -14,10 +14,10 @@ Your browser does not support the canvas element.
 <script>
 var canvas = document.getElementById("myCanvas");
 var ctx=canvas.getContext("2d");
-ctx.font="50px Times New Roman";
-ctx.fillStroke = "blue";
+ctx.font="50px Cursive";
+ctx.fillStyle = "blue";
 ctx.textAlign = "center";
-ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+ctx.strokeText("I love You", canvas.width/2, canvas.height/2);
 var dataurl = canvas.toDataURL('image/png', 1.0);
 document.getElementById("dta").innerHTML=dataurl;
 </script>
