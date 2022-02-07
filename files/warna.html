@@ -10,8 +10,8 @@ p {
  font-family:Arial;
 font-weight:bold;
 }
-h2{
-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+#prev {
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
@@ -42,17 +42,17 @@ border-collapse:collapse;
 <body>
 
 <p>
-input value dgn color name misalnya green,<br>
+Input value dgn color name misalnya green,<br>
 atau juga bisa input value dgn hex maupun rgb.
 </p>
-<h2>Preview</h2>
+<h2 id="prev">Preview</h2>
 <input type="text" id="in" value="red"><br>
 <button onclick="myFunction()">ubah warna</button>
 
 <script>
 function myFunction() {
 var x = document.getElementById("in").value;
-  document.getElementsByTagName("P")[0].style.color = x;
+  document.getElementById("prev").style.color = x;
 }
 </script>
 
