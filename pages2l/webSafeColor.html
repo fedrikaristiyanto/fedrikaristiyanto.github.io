@@ -26,16 +26,18 @@
 <p>web safe color lebih sederhana dr hex color, akan tetapi total warna pun terbatas
 hanya 216 warna, berbeda dengan hex maupun rgb yg mempunyai total 16777216 warna</p>
 
-       <input step="3" type="range" min="0" max="15" id="rangeInp1" oninput="webSafeColor()"> <br>
+      <form>
+ <input step="3" type="range" min="0" max="15" id="rangeInp1" oninput="webSafeColor()"> <br>
        <input step="3" type="range" min="0" max="15" id="rangeInp2" oninput="webSafeColor()"><br>
        <input step="3" type="range" min="0" max="15" id="rangeInp3" oninput="webSafeColor()"><br>
        
        <input class="AntiqueWhite" id="val" readonly>
-<button onclick="pratinjau.style.backgroundColor='#FFF'">default</button>
+<input type="reset" value="reset">
+<input type="button" onclick="pratinjau.style.backgroundColor='#FFF'" value="default textarea"
 <br>
        <textarea rows="10" cols="25" id="pratinjau" readonly></textarea>
        
-       
+       </form>
         <div id="footer"><address>fedrikaristiyanto.github.io</address></div>
 
         
