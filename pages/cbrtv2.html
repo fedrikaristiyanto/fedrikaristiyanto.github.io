@@ -39,15 +39,13 @@ padding:5px;
 <h3 id="header">Cube Root</h3>
 
 <div class="konten">
-<form>
  \( \sqrt[3]{x} \)
 <br><br>
-<input id="DM" type="number" placeholder="input number"><br><br>
-<input type="button" onclick="eks.value=Math.cbrt(DM.value)" value="cube root"><br><br>
+<input class="field" id="DM" type="number" placeholder="input number"><br><br>
+<button onclick="eks.value=Math.cbrt(DM.value)">cube root</button><br><br>
 
-<input id="eks" type="number" readonly>
-<input type="reset" value="reset">
-</form>
+<textarea class="field" id="eks" readonly></textarea>
+<button onclick="cl2()">cl</button>
 </div>
 <address id="footer">fedrikaristiyanto.github.io</address>
 </body>
