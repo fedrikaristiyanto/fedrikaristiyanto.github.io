@@ -3,5 +3,8 @@ function cl(){
 }
 
 function cl2(){
-  document.querySelectorAll(".field").value="";
+ var FL = document.querySelectorAll(".field");
+
+for (let i = 0; i < FL.length; i++) {
+  FL[i].value = "";
 }
