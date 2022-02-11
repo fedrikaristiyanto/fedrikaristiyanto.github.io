@@ -1,0 +1,13 @@
+// just for fun
+
+function animasiRotasiBumi(){
+var x;
+x = document.getElementById("outp");
+  x.innerHTML= "&#x1f30d;";
+   setTimeout(function(){
+    x.innerHTML="&#x1f30e;";}, 100);
+   setTimeout(function(){
+    x.innerHTML="&#x1f30f;";}, 200);
+}
+animasiRotasiBumi();
+setInterval(animasiRotasiBumi, 300);
