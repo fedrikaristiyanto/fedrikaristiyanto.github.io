@@ -3,5 +3,5 @@ function cl(){
 }
 
 function cl2(){
-  document.querySelector(".field").value="";
+  document.querySelectorAll(".field").value="";
 }
