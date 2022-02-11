@@ -7,8 +7,6 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<!-- clear input field source -->
-  <script src="/scripts/clearinput.js"></script>
 
 <style>
 
@@ -41,13 +39,15 @@ padding:5px;
 <h3 id="header">Cube Root</h3>
 
 <div class="konten">
+<form>
  \( \sqrt[3]{x} \)
 <br><br>
-<input class="field" id="DM" type="number" placeholder="input number"><br><br>
+<input id="DM" type="number" placeholder="input number"><br><br>
 <button onclick="eks.value=Math.cbrt(DM.value)">cube root</button><br><br>
 
-<input class="field" id="eks" type="number" readonly>
-<button onclick="cl2()">cl</button>
+<input id="eks" type="number" readonly>
+<input type="reset" value="reset">
+</form>
 </div>
 <address id="footer">fedrikaristiyanto.github.io</address>
 </body>
