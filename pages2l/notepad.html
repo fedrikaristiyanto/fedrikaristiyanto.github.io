@@ -10,7 +10,7 @@
 
 	function NP() {
 
-            var userInput = document.getElementById("myText").value;
+            var userInput = document.getElementById("inp").value;
 			
             var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "filename.txt");
@@ -25,7 +25,7 @@ textarea {
 </head>
 <body>
 
-<textarea id="myText" rows="50" cols="45" placeholder="write text"></textarea>
+<textarea id="inp" rows="50" cols="45" placeholder="write text"></textarea>
 <br>
     <button type="button" onclick="NP();">Click to Save</button>
 	
