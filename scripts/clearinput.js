@@ -4,9 +4,9 @@ function cl(){
 }
 
 
-//multi clear input field with class name .field
+//multiple clear input field with class name "field"
 function cl2(){
- var FLD = document.querySelectorAll(".field");
+ var FLD = document.getElementsByClassName("field");
 
  for (var i = 0; i < FLD.length; i++) {
    FLD[i].value = "";}
