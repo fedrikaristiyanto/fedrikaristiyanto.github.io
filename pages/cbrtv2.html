@@ -39,9 +39,11 @@ padding:5px;
 <div class="konten">
  \( \sqrt[3]{x} \)
 <br><br>
-<input id="DM" type="number" placeholder="input number"><br><br>
+<input class="field" id="DM" type="number" placeholder="input number"><br><br>
 <button onclick="eks.value=Math.cbrt(DM.value)">cube root</button><br><br>
-<input id="eks" type="number" readonly>
+
+<input class="field" id="eks" type="number" readonly>
+<button onclick=".field.value=''">cl</button>
 </div>
 <address id="footer">fedrikaristiyanto.github.io</address>
 </body>
