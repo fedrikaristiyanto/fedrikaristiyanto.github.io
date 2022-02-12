@@ -12,8 +12,26 @@ font-family:Georgia;
 padding:2px;
 }
  </style>
+<script>
+
+//animasi globe
+
+function animasiRotasiBumi(){
+var x;
+x = document.getElementById("outp");
+  x.innerHTML= "&#x1f30d;";
+   setTimeout(function(){
+    x.innerHTML="&#x1f30e;";}, 100);
+   setTimeout(function(){
+    x.innerHTML="&#x1f30f;";}, 200);
+}
+animasiRotasiBumi();
+setInterval(animasiRotasiBumi, 300);
+
+</script>
 </head>
 <body>
+<div id="outp"></div>
 <p style="color:red;">Halo! Saya ditulis dengan HTML.<br><br></p>
 <code style="background-color:gray;color:white;padding:2px;">
 <script>
