@@ -15,6 +15,7 @@ Copyright (c) 2022 by F
 <body>
 <input type="number" id="inp" onkeyup="mf()">
 <p id="op"></p>
+
 <script>
 function mf(){
   
@@ -26,7 +27,7 @@ var text ="";
 //creating a multiplication table
 for(var i = 1; i <= 10; i++) {
  var res = number*i;
-    text +=`${number} * ${i} = ${res}` + "<br>";
+    text +=`${number} &times; ${i} = ${res}` + "<br>";
 }
 
 if (number==""){
@@ -35,7 +36,9 @@ if (number==""){
     else {
   
 
-document.getElementById("op").innerHTML=text;
+document.getElementById("op").innerHTML=text +
+"<br>selamat belajar dan menghafal yaaaa... :)"
+;
 }
 }
 </script>
