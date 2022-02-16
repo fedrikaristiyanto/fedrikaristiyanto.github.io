@@ -29,7 +29,7 @@ for(var i = 1; i <= 10; i++) {
     text +=`<b>${number} &times; ${i} = ${res}</b><br>`;
 }
 
-if (number==""){
+if (number=="" || isNaN(number)){
   document.getElementById("op").innerHTML=null;
 }
     else {
