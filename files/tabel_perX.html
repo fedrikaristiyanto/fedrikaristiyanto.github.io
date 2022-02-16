@@ -13,7 +13,7 @@ Copyright (c) 2022 by F
   <title>tabel perkalian 1 - 10</title>
 </head>
 <body>
-<input type="number" id="inp" placeholder="masukkan angka" onkeyup="mf()">
+<input type="number" id="inp" placeholder="masukkan bil. bulat" onkeyup="mf()">
 <p id="op"></p>
 
 <script>
@@ -30,7 +30,7 @@ for(var i = 1; i <= 10; i++) {
     text +=`${number} &times; ${i} = ${res}` + "<br>";
 }
 
-if (number==""){
+if (number=="" || isNaN(number)){
   document.getElementById("op").innerHTML=null;
 }
     else {
