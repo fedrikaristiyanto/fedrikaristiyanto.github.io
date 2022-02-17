@@ -10,7 +10,7 @@ Copyright (c) 2022 by F
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>tabel perkalian 1 - 10</title>
+  <title>tabel perkalian 1 - 10 beserta pembagian</title>
 </head>
 <body>
 <input type="number" id="inp" placeholder="masukkan bil. bulat" onkeyup="mf()">
@@ -27,8 +27,10 @@ var Div ="";
 //creating a multiplication table
 for(var i = 1; i <= 10; i++) {
  var res = number*i;
+    // tabel perkalian
     Times +=`<b>${i} &times; ${number} = ${res}</b><br>`;
-    Div +=`<b>${res} &div; ${number} = ${i}</b><br>`
+    //inverse dr perkalian yaitu pembagian
+    Div +=`<b>${res} &div; ${number} = ${i}</b><br>`;
 }
 
 if (number=="" || isNaN(number)){
@@ -37,7 +39,7 @@ if (number=="" || isNaN(number)){
     else {
   
 
-document.getElementById("konten").innerHTML=Times + Div +
+document.getElementById("konten").innerHTML=`${Times} <br><br> ${Div}` +
 "<br><i>selamat belajar dan menghafal yaaaa...</i> :)";
 document.getElementById("konten").style.backgroundColor="lightcyan";
 }
