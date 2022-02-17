@@ -21,12 +21,14 @@ function mf(){
   
 
 var number = parseInt(document.getElementById("inp").value);
-var text ="";
+var Times ="";
+var Div ="";
 
 //creating a multiplication table
 for(var i = 1; i <= 10; i++) {
  var res = number*i;
-    text +=`<b>${i} &times; ${number} = ${res}</b><br>`;
+    Times +=`<b>${i} &times; ${number} = ${res}</b><br>`;
+    Div +=`<b>${res} &div; ${number} = ${i}</b><br>`
 }
 
 if (number=="" || isNaN(number)){
@@ -35,7 +37,7 @@ if (number=="" || isNaN(number)){
     else {
   
 
-document.getElementById("konten").innerHTML=text +
+document.getElementById("konten").innerHTML=Times + Div +
 "<br><i>selamat belajar dan menghafal yaaaa...</i> :)";
 document.getElementById("konten").style.backgroundColor="lightcyan";
 }
