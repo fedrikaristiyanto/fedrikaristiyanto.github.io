@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  perspective:100px;
+  
+}
+
+#div2 {
+  padding: 20px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: rgba(0,255,255,0.1);
+  transform: rotateX(5deg);
+  transform-style: preserve-3d;
+}
+
+#div3 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: rgba(255,255,0,0.1);
+  transform: rotateX(50deg);
+
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="div1">
+  <div id="div2">
+  <input id="inp" type="number"><br>
+  <input id="outp" readonly>
+  <div id="div3"><button onclick="Abs()">exec</button></div>
+ </div>
+</div>
+
+<script>
+
+function Abs() {
+const i =document.getElementById("inp").value;
+document.getElementById("outp").value=Math.abs(i);
+
+}
+</script>
+
+</body>
+</html>
