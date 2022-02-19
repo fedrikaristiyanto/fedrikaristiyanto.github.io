@@ -1,0 +1,25 @@
+#h_nav_bar a {
+ padding:2px;
+ font-weight:bold;
+ float:left;
+}
+
+#h_nav_bar a:link {
+color:#FFF;
+background-color:#00F;
+}
+
+#h_nav_bar a:visited {
+ color:#FFF;
+ background-color:darkblue;
+}
+
+#h_nav_bar a:hover {
+ color:#FFF;
+ background-color:green;
+}
+
+#h_nav_bar a:active {
+ color:#FFF;
+ background-color:#0F0;
+}
