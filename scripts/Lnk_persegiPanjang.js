@@ -5,7 +5,7 @@ function hitung(){
 var p = document.getElementById("pjg").value;
 var l = document.getElementById("lbr").value;
 var L = p*l;
-var k = 2*(p+l);
+var k = (2*p)+(2*l);
 
 if (l >= p || p=="" || l=="") {
   alert("tdk msk akal, l tdk lbh pjg dr p ato sama dgn p \n\npastikan smw bidang tlah diisi");
