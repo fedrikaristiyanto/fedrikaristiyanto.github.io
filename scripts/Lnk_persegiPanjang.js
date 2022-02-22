@@ -11,7 +11,7 @@ if (l >= p || p=="" || l=="") {
   alert("tdk msk akal, l tdk lbh pjg dr p ato sama dgn p \n& \npastikan smw bidang tlah diisi");
 }
 else{
-document.getElementById("Result").value=`Luas : ${L} 
+document.getElementById("Result").value=`Luas : ${p} &times; ${l} = ${L} 
 keliling: ${k}`;
 }
 }
