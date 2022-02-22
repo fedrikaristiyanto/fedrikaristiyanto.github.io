@@ -12,6 +12,6 @@ if (l >= p || p=="" || l=="") {
 }
 else{
 document.getElementById("Result").value=`Luas : ${p} × ${l} = ${L} 
-keliling: $ 2 × (${p} + ${l}) = ${k}`;
+keliling: 2 × (${p} + ${l}) = ${k}`;
 }
 }
