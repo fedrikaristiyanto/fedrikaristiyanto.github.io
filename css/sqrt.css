@@ -1,6 +1,10 @@
+body {
+background-color:MintCream;
+}
+
 #header{
-background-color:#20b2aa;
-padding:10px;
+ background-color:#20b2aa;
+ padding:10px;
 }
 input {
   font:16px courier new;
