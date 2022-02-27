@@ -9,6 +9,9 @@
 function superMario(){
     navigator.vibrate([125, 75, 125, 275, 200, 275, 125, 75, 125, 275, 200, 600, 200, 600])
 }
+function powerRangers(){
+  navigator.vibrate([150,150, 150,150, 75,75, 150,150, 150,150, 450])
+}
 
 </script>
     </head>
@@ -16,6 +19,7 @@ function superMario(){
       <h3>vibrate</h3>
         <button onclick="navigator.vibrate(1000)">vibrate in 1s</button><br>
         <button onclick="superMario()">Super Mario vibrate style</button>
+<button onclick="powerRangers()">power rangers</button>
 <p><i style="color:gray">note: mungkin ada beberapa device / browser yg tdk mendukung</i></p>
     </body>
 </html>
