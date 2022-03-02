@@ -11,7 +11,8 @@
 
 <form name="form">
 input text <br>
-<textarea id="txt" cols="20" rows="25"></textarea><br>
+<textarea id="txt" cols="25" rows="25" oncopy="ok(this.value)"></textarea><br>
+<input type="button" value="ctrl+c">
 <input type="radio" name="syle" value="Uppercase" oninput="changeTxt()">UpperCase
 <input type="radio" name="syle" value="Lowercase" oninput="changeTxt()">LowerCase
 <input type="radio" name="syle" value="Capitalize" oninput="changeTxt()">Capitalized
