@@ -11,8 +11,8 @@
 
 <form name="form">
 input text <br>
-<textarea id="txt" cols="25" rows="25" oncopy="ok(this.value)"></textarea><br>
-<input type="button" value="ctrl+c">
+<textarea id="txt" cols="25" rows="25" oncopy="ok(this.value)"></textarea>
+<input type="button" class="bttn" data-clipboard-target="#txt" value="ctrl+c"><br>
 <input type="radio" name="syle" value="Uppercase" oninput="changeTxt()">UpperCase
 <input type="radio" name="syle" value="Lowercase" oninput="changeTxt()">LowerCase
 <input type="radio" name="syle" value="Capitalize" oninput="changeTxt()">Capitalized
@@ -23,5 +23,9 @@ UpperCase: ABC DEF, <br>
 LowerCase: abc def, <br>
 Capitalized: Abc Def
 </p>
+
+<script>
+
+</script>
 </body>
 </html>
