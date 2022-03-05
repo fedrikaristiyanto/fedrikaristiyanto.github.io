@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bytes & bits converter (digital storage)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<input type="text" id="inp">
+
+
+
+<select id="opsi">
+    <option value="B to b">Convert Bytes to bits</option>
+    <option value="b to B">Convert bits to Bytes</option>
+</select>
+<button onclick="myFunction()">convert</button>
+
+<p id="outp"></p>
+
+<script>
+function myFunction() {
+  var i = document.getElementById("inp").value;
+  var x = document.getElementById("opsi");
+  var y;
+  if (x.value === "B to b") {
+    y = `${i} Bytes = ${i * 8} bits`;
+  } else {
+    y = `${i} bits = ${i / 8} Bytes`;
+  }
+  if (isNaN(i) || i == ""){
+      alert("not valid")
+  }
+  else {
+  document.getElementById("outp").innerHTML=y;
+  }
+}
+</script>
+
+</body>
+</html>
+
