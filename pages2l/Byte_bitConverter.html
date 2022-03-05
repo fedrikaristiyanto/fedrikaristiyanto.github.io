@@ -24,9 +24,9 @@ function myFunction() {
   var x = document.getElementById("opsi");
   var y;
   if (x.value === "B to b") {
-    y = `<b>${i}</b> Bytes = ${i * 8} bits`;
+    y = `<b>${i}</b> Bytes = <b>${i * 8}</b> bits`;
   } else {
-    y = `${i} bits = ${i / 8} Bytes`;
+    y = `<b>${i}</b> bits = <b>${i / 8}</b> Bytes`;
   }
   if (isNaN(i) || i == ""){
       alert("not valid")
