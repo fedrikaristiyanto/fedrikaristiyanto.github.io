@@ -4,26 +4,28 @@
 <title>Metallica Unforgiven</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/files/msc/script/Metallica_Unforgiven.js"></script>
-<script>
+</head>
+<body onload="loaD()">
+<h3>Metallica Unforgiven 1, 2 & 3</h3>
+<figure>
+<figcaption id="i">The Unforgiven</figcaption>
+<audio id="a" src="http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH" controls></audio>
+<button onclick="prev()"><</button>change
+<button onclick="next()">></button>
 
+</figure>
+
+<p id="Unforgiven"></p>
+<p>click file to download</p>
+
+script>
 
 
 
 var Src = [
-
-"
-http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH
-",
-
-
-"
-http://docs.google.com/uc?export=open&id=1LWBbF7oxJV7im8Cd48ghBCIOuA6WjyET
-", 
-
-"
-http://docs.google.com/uc?export=open&id=1VUb18AXP79n7-WzJc2wY6L2hY1yaEhlZ
-"
-
+"http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH",
+"http://docs.google.com/uc?export=open&id=1LWBbF7oxJV7im8Cd48ghBCIOuA6WjyET", 
+"http://docs.google.com/uc?export=open&id=1VUb18AXP79n7-WzJc2wY6L2hY1yaEhlZ"
 ];
 var inf = ["The Unforgiven I","Unforgiven II", "Unforgiven III"];
 
@@ -58,22 +60,7 @@ function prev(){
     aud.src= Src[n];
 }
 
-
-
 </script>
-</head>
-<body onload="loaD()">
-<h3>Metallica Unforgiven 1, 2 & 3</h3>
-<figure>
-<figcaption id="i">The Unforgiven</figcaption>
-<audio id="a" src="http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH" controls></audio>
-<button onclick="prev()"><</button>change
-<button onclick="next()">></button>
-
-</figure>
-
-<p id="Unforgiven"></p>
-<p>click file to download</p>
 
 </body>
 </html>
