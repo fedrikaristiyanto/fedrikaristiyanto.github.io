@@ -6,6 +6,54 @@
 <script src="/files/msc/script/Metallica_Unforgiven.js"></script>
 <script>
 
+
+
+
+var Src = [
+
+"",
+
+
+"", 
+
+""
+
+];
+var inf = ["The Unforgiven I","Unforgiven II", "Unforgiven III"];
+
+var n=0;
+
+function next(){
+    var aud = document.getElementById("a");
+    var i = document.getElementById("i");
+    n++;
+    if (n >= Src.length){
+        n = 0;
+    }
+    
+    if (n>= inf.length){
+        n=0;
+    }
+    i.innerHTML = inf[n];
+    sldr.src = Src[n];
+}
+
+function prev(){
+    var aud = document.getElementById("a");
+    var i= document.getElementById("i");
+    n--;
+    if (n<0){
+        n = Src.length-1;
+    }
+    if (n<0){
+        n = inf.length-1;
+    }
+    i.innerHTML= inf[n];
+    sldr.src= Src[n];
+}
+
+
+
 </script>
 </head>
 <body onload="loaD()">
