@@ -6,10 +6,13 @@
 <body>
 
 <p>auto play next</p>
+<figure>
+<figcaption id="tt">Pit of Zombies by Cannibal Corpse</figcaption>
 <audio id="tr" onended="myPly()" controls>
 <source src="http://docs.google.com/uc?export=open&id=1Uj-usnv2dOJKeuA4JPZBWzy8hWaVVAZM" type="audio/mpeg">
 </source>
 </audio>
+</figure>
 
 
 
@@ -20,6 +23,10 @@ var Src = [
 "http://docs.google.com/uc?export=open&id=1Uj-usnv2dOJKeuA4JPZBWzy8hWaVVAZM",
 "http://docs.google.com/uc?export=open&id=1RiVJPxk6oKufRmVGWS4Jy7P2agdkvcjt",
 "http://docs.google.com/uc?export=open&id=1RFR73EU7GeRX3-gKGXYwVb4HewZEkUJ-"
+];
+var T = [
+"Pit of Zombies by Cannibal Corpse", "Deceit by Suffocation",
+"Kafir by Nile"
 ];
 
 var n=0;
@@ -33,6 +40,10 @@ if (n >= Src.length){
 o.src = Src[n];
 o.play();
 
+if (n >= T.length){
+n=0;
+}
+document.getElementById("tt").innerHTML=T[n];
 }
 </script>
 
