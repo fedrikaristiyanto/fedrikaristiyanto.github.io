@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="t">shatter</p>
+<audio id="aud" onended="mfu()" controls>
+<source src="
+http://docs.google.com/uc?export=open&id=177rDNArYCZDDy15ADt99VXckQYe84hcW
+" type="audio/mpeg"></source>
+</audio>
+<button onclick="mfu()">change randomly</button>
+
+<script>
+var Aud = [
+"http://docs.google.com/uc?export=open&id=177rDNArYCZDDy15ADt99VXckQYe84hcW",
+"http://docs.google.com/uc?export=open&id=1hVznbcDUvYMkCydBV0pmM43mgJujFcUU"
+];
+var Ttl = ["shatter", "evisceration"]
+var n;
+function mfu(){
+var a = document.getElementById("aud");
+var rdm = Math.floor(Math.random()*2);
+if (rdm == 0){n = Ttl[0]; a.src=Aud[0];a.play();}
+else {n = Ttl[1]; a.src=Aud[1];a.play();}
+document.getElementById("t").innerHTML=n;
+}
+
+</script>
+</body>
+</html>
