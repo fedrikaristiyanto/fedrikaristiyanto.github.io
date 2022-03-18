@@ -27,7 +27,8 @@ function mfu(){
 var a = document.getElementById("aud");
 var rdm = Math.floor(Math.random()*2);
 if (rdm == 0){n = Ttl[0]; a.src=Aud[0];a.play();}
-else {n = Ttl[1]; a.src=Aud[1];a.play();}
+else if (rdm==1){n=Ttl[1]; a.src=Aud[1];a.play();}
+else {n = Ttl[2]; a.src=Aud[2];a.play();}
 document.getElementById("t").innerHTML=n;
 }
 
