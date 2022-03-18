@@ -1,5 +1,6 @@
 var ious = [
 "<a href='http://docs.google.com/uc?export=open&id=1KfV-TQeMgWmd8AMZ0WyvaFSq-6ijdH0z'>George Benson - Breezin</a>",
+"<a href='http://docs.google.com/uc?export=open&id=1qwuK3MxeR4I5XlwHEvPOyFlesJZH3qd6'>John McLaughlin - Love & Understanding</a>", 
 "<a href='http://docs.google.com/uc?export=open&id=14hjEoQc8mYpxV5aJXt9-GNimiXRAAbby'>Lee Ritenour - Stolen Moments</a>", 
 "<a href='http://docs.google.com/uc?export=open&id=1nDyEm_bYPimdwwtZVuQyUwdi7OLsF0M6'>Marilyn Monroe - I wanna be loved by you</a>", 
 "<a href='http://docs.google.com/uc?export=open&id=1cn0qopOfXec9Gw1vgpd_jNmwfuqunFvY'>Tokyo Jihen - Onnanoko WA daredemo</a>", 
