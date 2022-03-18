@@ -21,7 +21,7 @@ text-align:center
 <figure>
 <figcaption id="i">The Unforgiven</figcaption>
 <button onclick="prev()"><</button>
-<audio id="a" src="http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH" controls></audio>
+<audio id="a" src="http://docs.google.com/uc?export=open&id=1CNONAQia2CWajZZ8_fA6-eTF_ryRxtoH" controls onended="next()"></audio>
 <button onclick="next()">></button>
 </figure>
 
@@ -51,6 +51,7 @@ function next(){
     }
     i.innerHTML = inf[n];
     aud.src = Src[n];
+aud.play();
 }
 
 function prev(){
@@ -65,6 +66,7 @@ function prev(){
     }
     i.innerHTML= inf[n];
     aud.src= Src[n];
+aud.play();
 }
 </script>
 
