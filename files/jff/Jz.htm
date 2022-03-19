@@ -3,14 +3,27 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+figure{
+width:90%;
+background-color:#00f ;
+color:#fff;
+border: none;
+padding:8px;
+margin-left:auto;
+margin-right:auto;
+text-align:center
+}
 </style>
 </head>
 <body onload="ld()">
-<p id="t"></p>
+<figure>
+<figcaption id="t"></figcaption>
 <audio id="aud" onended="mfu()" controls>
 <source src="" type="audio/mpeg"></source>
 </audio>
 <button onclick="mfu()">random</button>
+</figure>
 
 
 <script>
