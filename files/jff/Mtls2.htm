@@ -3,15 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
+body{
+background-color:#000;
+color:#fff;
+}
+figure{
+background-color:#f00;
+color:#fff;
+}
 </style>
 </head>
 <body onload="ld()">
-<p id="t"></p>
+<figure>
+<figcaption id="t"></figcaption>
 <audio id="aud" onended="mfu()" controls>
 <source src="" type="audio/mpeg"></source>
 </audio>
 <button onclick="mfu()">random</button>
+</figure>
 
 <script>
 var Aud = [
