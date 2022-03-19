@@ -3,12 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<p id="t">Shatter Their Bones</p>
+<body onload="ld()">
+<p id="t"></p>
 <audio id="aud" onended="mfu()" controls>
-<source src="
-http://docs.google.com/uc?export=open&id=177rDNArYCZDDy15ADt99VXckQYe84hcW
-" type="audio/mpeg"></source>
+<source src="" type="audio/mpeg"></source>
 </audio>
 <button onclick="mfu()">random</button>
 
@@ -28,9 +26,19 @@ function mfu(){
 var a = document.getElementById("aud");
 var rdm = Math.floor(Math.random()*Aud.length);
 if (rdm == 0){n = Ttl[0]; a.src=Aud[0];a.play();}
-else if (rdm==1){n=Ttl[1]; a.src=Aud[1];a.play();}
+else if (rdm == 1){n=Ttl[1];a.src=Aud[1];a.play();}
 else {n = Ttl[2]; a.src=Aud[2];a.play();}
 document.getElementById("t").innerHTML=n;
+}
+
+function ld(){
+var a2 = document.getElementById("aud");
+var rdm2 = Math.floor(Math.random()*Aud.length);
+if (rdm2 == 0){n = Ttl[0];a2.src=Aud[0];}
+else if (rdm2==1){n=Ttl[1];a2.src=Aud[1];}
+else {n = Ttl[2]; a2.src=Aud[2];;}
+document.getElementById("t").innerHTML=n;
+
 }
 
 </script>
