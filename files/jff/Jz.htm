@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body onload="ld()">
+<p id="t"></p>
+<audio id="aud" onended="mfu()" controls>
+<source src="" type="audio/mpeg"></source>
+</audio>
+<button onclick="mfu()">play random</button>
+
+
+<script>
+var Aud = [
+"",
+""
+];
+var Ttl = ["", ""]
+var n;
+function mfu(){
+var a = document.getElementById("aud");
+var rdm = Math.floor(Math.random()*2);
+if (rdm == 0){n = Ttl[0]; a.src=Aud[0];a.play();}
+else {n = Ttl[1]; a.src=Aud[1];a.play();}
+document.getElementById("t").innerHTML=n;
+}
+function ld(){
+var a2 = document.getElementById("aud");
+var rdm2 = Math.floor(Math.random()*2);
+if (rdm2 == 0){n = Ttl[0];
+a2.src=Aud[0];a2.play();}
+else {n = Ttl[1]; a2.src=Aud[1];a2.play();}
+document.getElementById("t").innerHTML=n;
+
+}
+
+</script>
+</body>
+</html>
