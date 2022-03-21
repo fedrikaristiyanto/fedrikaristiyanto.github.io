@@ -24,14 +24,14 @@ text-align:center;
 </style>
 
 </head>
-<body>
+<body onload="ld()">
 
 <!-- auto play next squentially -->
 
 <figure>
-<figcaption id="tt">Pit of Zombies by Cannibal Corpse</figcaption>
+<figcaption id="tt"></figcaption>
 <audio id="tr" onended="myPly()" controls>
-<source src="http://docs.google.com/uc?export=open&id=1Uj-usnv2dOJKeuA4JPZBWzy8hWaVVAZM" type="audio/mpeg">
+<source src="" type="audio/mpeg">
 </source>
 </audio>
 <button onclick="myPly()">&#x23ed;</button>
@@ -70,6 +70,12 @@ if (n >= T.length){
 n=0;
 }
 document.getElementById("tt").innerHTML=T[n];
+}
+
+function ld(){
+var aud = document.getElementById("tr");
+aud.src = Src[0];
+document.getElementById("tt").innerHTML=n[0];
 }
 </script>
 
