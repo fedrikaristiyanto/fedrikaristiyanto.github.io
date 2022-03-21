@@ -1,1 +1,2 @@
-var mtlc = []
+var mtlc = [];
+document.getElementById("Mtlc").innerHTML=mtlc;
