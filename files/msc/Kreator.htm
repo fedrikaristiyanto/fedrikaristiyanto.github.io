@@ -44,10 +44,10 @@ function myf(){
 
 
 var aud = document.getElementById("audi");
-for(var t=0; t<ttl.length;t++){
+for(var t=0; ;t++){
 if (t>=ttl.length){ttl=0}
 var txt = ttl[t];
-for(var i = 0; i < songs.length; i++) {
+for(var i = 0; ; i++) {
 if(i>=songs.length){i=0}
  aud.src = songs[i];
 aud.play();
