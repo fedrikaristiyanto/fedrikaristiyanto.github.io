@@ -19,5 +19,45 @@ color:#0f0;
 <p id="HordesOfChaos"></p>
 <script src="/files/msc/script/Kreator.js"></script>
 
+<!-- play squence -->
+
+<p id="tt">
+Hordes of chaos
+</p>
+<audio id ="audi" controls onended ="myf()">
+<source src="
+http://docs.google.com/uc?export=open&id=1Ut6qFM8iRt9BjICJ8cAEo5Qw1buDkyhm" type="audio/mpeg"></source>
+</audio>
+<script>
+var ttl=[];
+ttl[0]="Hordes of chaos";
+ttl[1]="war curse";
+
+var songs = [];
+songs[0] ="http://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB";
+
+songs[1] ="http://docs.google.com/uc?export=open&id=1rM825C8nWU7z-1cpAAX9wimaxdSBPzHU";
+
+
+
+function myf(){
+
+
+var aud = document.getElementById("audi");
+for(var t=0; t<ttl.length;t++){
+var txt = ttl[t];
+for(var i = 0; i < songs.length; i++) {
+ aud.src = songs[i];
+}
+}
+document.getElementById("tt").innerHTML=txt;
+
+
+}
+  
+
+
+</script>
+
 </body>
 </html>
