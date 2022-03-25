@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>x\m/tls</title>
+<link href='https://fonts.googleapis.com/css?family=Metal Mania' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family:'Metal Mania';
+background-color:#000;
+color:#fff;
+}
+figure{
+width:90%;
+background-color:#f00;
+color:#fff;
+border: none;
+padding:8px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+#footer{
+color:#f00;
+position:fixed;
+bottom:0;
+left:8px;
+right:8px;
+}
+
+</style>
+
+</head>
+<body onload="ld()">
+
+<!-- auto play next squentially -->
+
+<figure>
+<figcaption id="tt"></figcaption>
+<audio id="tr" onended="myPly()" controls>
+<source src="" type="audio/mpeg">
+</source>
+</audio>
+<button onclick="myPly()">&#x23ed;</button>
+</figure>
+
+
+
+
+<script>
+//dataURL
+var Src = [
+"https://docs.google.com/uc?export=open&id=0B3Wyav8VdLlNU1MyT0Zxb295S0U",
+"https://docs.google.com/uc?export=open&id=1Uj-usnv2dOJKeuA4JPZBWzy8hWaVVAZM",
+"https://docs.google.com/uc?export=open&id=1RiVJPxk6oKufRmVGWS4Jy7P2agdkvcjt",
+"https://docs.google.com/uc?export=open&id=1RFR73EU7GeRX3-gKGXYwVb4HewZEkUJ-",
+"https://docs.google.com/uc?export=open&id=1cLR-mLUZxHCmsRQTJ4MeZEz9MxLm6ZF0"
+];
+
+var T = [
+"Burgerkill - Berkarat",
+"Pit of Zombies by Cannibal Corpse", 
+"Deceit by Suffocation",
+"Kafir by Nile",
+"Cattle Decap - A living, breathing piece of defecating meat"
+];
+
+var n=0;
+
+function myPly(){
+var o = document.getElementById("tr");
+n++;
+if (n >= Src.length){
+        n = 0;
+    }
+o.src = Src[n];
+o.play();
+
+if (n >= T.length){
+n=0;
+}
+document.getElementById("tt").innerHTML=T[n];
+}
+
+function ld(){
+var aud = document.getElementById("tr");
+aud.src = Src[0];
+document.getElementById("tt").innerHTML=T[0];
+}
+</script>
+
+<div id="footer">
+<address>fedrikaristiyanto.github.io</address>
+</div>
+
+</body>
+</html>
