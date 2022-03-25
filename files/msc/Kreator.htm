@@ -40,24 +40,26 @@ songs[0] ="http://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURa
 songs[1] ="http://docs.google.com/uc?export=open&id=1rM825C8nWU7z-1cpAAX9wimaxdSBPzHU";
 
 
+var n=0;
 
-function myf(){
+function my(){
+var o = document.getElementById("audi");
+n++;
+if (n >= songs.length){
+        n = 0;
+    }
 
+if (n==0){o.src=songs[n];}
+else{
+o.src = songs[n];
+o.play();}
 
-var aud = document.getElementById("audi");
-for(var t=0; t<=ttl.length;t++){
-if (t>=ttl.length){ttl=0}
-var txt = ttl[t];
-for(var i = 0;i<=songs.length; i++) {
-if(i>=songs.length){i=0}
- aud.src = songs[i];
-aud.play();
+if (n >= ttl.length){
+n=0;
 }
+document.getElementById("tt").innerHTML=ttl[n];
 }
-document.getElementById("tt").innerHTML=txt;
 
-
-}
   
 
 
