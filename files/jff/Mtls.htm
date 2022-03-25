@@ -77,8 +77,11 @@ n++;
 if (n >= Src.length){
         n = 0;
     }
+
+if (n==0){o.src=Src[n];}
+else{
 o.src = Src[n];
-o.play();
+o.play();}
 
 if (n >= T.length){
 n=0;
