@@ -18,8 +18,8 @@ text-align:center
 </head>
 <body onload="ld()">
 <figure>
-<figcaption id="t"></figcaption>
-<audio id="aud" onended="mfu()" controls>
+<figcaption id="tt"></figcaption>
+<audio id="tr" onended="mfu()" controls>
 <source src="" type="audio/mpeg"></source>
 </audio><br>
 <button onclick="mfu()">random</button>
@@ -41,24 +41,27 @@ var Ttl = [
 ];
 var n;
 function mfu(){
-var a = document.getElementById("aud");
-var rdm = Math.floor(Math.random()*Aud.length);
-if (rdm == 0){n = Ttl[0]; a.src=Aud[0];a.play();}
-else if (rdm == 1){n=Ttl[1];a.src=Aud[1];a.play();}
-else if (rdm == 2) {n=Ttl[2];a.src=Aud[2];a.play();}
-else {n = Ttl[3]; a.src=Aud[3];a.play();}
-document.getElementById("t").innerHTML=n;
+var o = document.getElementById("tr");
+n++;
+if (n >= Aud.length){
+        n = 0;
+    }
+
+if (n==0){o.src=Aud[n];}
+else{
+o.src = Aud[n];
+o.play();}
+
+if (n >= Ttl.length){
+n=0;
+}
+document.getElementById("tt").innerHTML=Ttl[n];
 }
 
 function ld(){
-var a2 = document.getElementById("aud");
-var rdm2 = Math.floor(Math.random()*Aud.length);
-if (rdm2 == 0){n = Ttl[0];a2.src=Aud[0];}
-else if (rdm2==1){n=Ttl[1];a2.src=Aud[1];}
-else if (rdm2==2) {n=Ttl[2];a2.src=Aud[2];}
-else {n = Ttl[3]; a2.src=Aud[3];}
-document.getElementById("t").innerHTML=n;
-
+var aud = document.getElementById("tr");
+aud.src = Aud[0];
+document.getElementById("tt").innerHTML=Ttl[0];
 }
 
 </script>
