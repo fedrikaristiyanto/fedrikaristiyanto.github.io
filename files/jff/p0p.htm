@@ -7,7 +7,7 @@
 <figure>
 <figcaption id="i"></figcaption>
 
-<audio id="track" controls>
+<audio id="track" onended="playSquence()" controls>
 <source src=""></source>
 </audio>
 
@@ -25,6 +25,22 @@ tr[1]="https://docs.google.com/uc?export=open&id=1pBnRe3pa3b-7-VWWXB7gmeJ1HAcR5i
 var n=0;
 
 function playSquence() {
+
+var audio = document.getElementById("tr");
+n++;
+if (n >= tr.length){
+        n = 0;
+    }
+
+if (n==0){audio.src=tr[n];}
+else{
+audio.src = tr[n];
+audio.play();}
+
+if (n >= ttl.length){
+n=0;
+}
+document.getElementById("i").innerHTML=ttl[n];
 
 }
 
