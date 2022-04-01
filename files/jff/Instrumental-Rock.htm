@@ -6,7 +6,8 @@
 <body onload="load1stTrack()">
 <figure>
 <figcaption id="i"></figcaption>
-<audio id="track" onended="playSquence()" controls>
+<img id="imge" src="https://fedrikaristiyanto.github.io/image/d.png" width="50px">
+<audio id="track" onended="playSquence()" onplay="an()" onpause="ans()" controls>
 <source src="" type="audio/mpeg">
 </source>
 </audio>
@@ -49,11 +50,22 @@ document.getElementById("i").innerHTML=ttl[n];
 
 }
 
+function an(){
+var ig = document.getElementById("im");
+ig.src ="https://fedrikaristiyanto.github.io/image/d.gif";
+}
+function ans(){
+var ig= document.getElementById("im");
+ig.src="https://fedrikaristiyanto.github.io/image/d.png";
+}
+
 function load1stTrack(){
 var audio = document.getElementById("track");
 audio.src=tr[0];
 document.getElementById("i").innerHTML=ttl[0];
 }
+
+
 
 </script>
 </body>
