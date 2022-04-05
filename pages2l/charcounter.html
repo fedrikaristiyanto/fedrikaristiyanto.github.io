@@ -6,9 +6,10 @@
   <title>character counter</title>
 </head>
 <body>
-<textarea id="txt" oninput="count()"></textarea>
+<textarea id="txt"></textarea>
+<button onclick="count()">count</button>
 <p>character length: <span id="o"></span></p>
-<p>digit terhitung: <span id="D">...</span></p>
+<p>digit terhitung: <span id="D"></span></p>
 <script>
 function count(){
   var i = document.getElementById("txt").value;
