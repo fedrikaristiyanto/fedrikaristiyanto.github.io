@@ -8,11 +8,15 @@
 <body>
 <textarea id="txt" oninput="count()"></textarea>
 <p>character length: <span id="o"></span></p>
-<script id="jsbin-javascript">
+<p id="D"></p>
+<script>
 function count(){
   var i = document.getElementById("txt").value;
+  var dgit = new RegExp(/[0-9]/g);
   var c = i.length;
+  var d= i.match(dgit).length;
   document.getElementById("o").innerHTML=c;
+document.getElementById("D").innerHTML=d;
 }
 </script>
 </body>
