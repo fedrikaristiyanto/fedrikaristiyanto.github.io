@@ -12,7 +12,7 @@
 <script>
 function count(){
   var i = document.getElementById("txt").value;
-  var dgit = new RegExp(/[0-9]/g);
+  var dgit = new RegExp(/\d/g);
   var c = i.length;
   var d= i.match(dgit);
   document.getElementById("o").innerHTML=c;
