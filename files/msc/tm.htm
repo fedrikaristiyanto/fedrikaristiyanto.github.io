@@ -3,13 +3,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body onload="load1stTrack()">
 <figure>
-<figcaption></figcaption>
-<audio src="" controls></audio>
+<figcaption id="i"></figcaption>
+<audio id="track" src="" controls></audio>
 </figure>
 <script>
-/*
+
 var ttl=[]; var tr=[];
 
 ttl[0]="Kreator - Hordes Of Chaos";
@@ -17,7 +17,14 @@ ttl[0]="Kreator - Hordes Of Chaos";
 tr[0]="https://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB";
 
 var n=0;
-*/
+
+function load1stTrack(){
+var audio = document.getElementById("track");
+audio.src=tr[0];
+document.getElementById("i").innerHTML=ttl[0];
+}
+
+
 </script>
 </body>
 </html>
