@@ -6,17 +6,39 @@
 <body onload="load1stTrack()">
 <figure>
 <figcaption id="i"></figcaption>
-<audio id="track" src="" controls></audio>
+<audio id="track" src="" onended="playSquence()" controls></audio>
 </figure>
 <script>
-
+/*
 var ttl=[]; var tr=[];
 
 ttl[0]="Kreator - Hordes Of Chaos";
-
 tr[0]="https://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB";
 
+ttl=[1];
+tr=[1];
+
 var n=0;
+
+function playSquence() {
+
+var audio = document.getElementById("track");
+n++;
+if (n >= tr.length){
+        n = 0;
+    }
+
+if (n==0){audio.src=tr[n];}
+else{
+audio.src = tr[n];
+audio.play();}
+
+if (n >= ttl.length){
+n=0;
+}
+document.getElementById("i").innerHTML=ttl[n];
+
+}
 
 function load1stTrack(){
 var audio = document.getElementById("track");
@@ -24,7 +46,7 @@ audio.src=tr[0];
 document.getElementById("i").innerHTML=ttl[0];
 }
 
-
+*/
 </script>
 </body>
 </html>
