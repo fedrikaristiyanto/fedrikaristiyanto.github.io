@@ -45,7 +45,7 @@ right:8px;
 <button onclick="myPly()">&#x23ed;</button>
 </figure>
 
-
+<p id="tracklist"></p>
 
 
 <script>
@@ -114,6 +114,11 @@ var x = document.getElementById("tt");
 x.style.color = x.style.color == "black" ? "lime" : "black";
 }
 
+var text = "";
+for (var x of T) {
+  text += x;
+}
+document.getElementById("tracklist").innerHTML=text;
 
 </script>
 
