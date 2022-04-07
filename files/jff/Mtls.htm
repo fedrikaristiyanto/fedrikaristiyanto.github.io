@@ -114,10 +114,11 @@ var x = document.getElementById("tt");
 x.style.color = x.style.color == "black" ? "lime" : "black";
 }
 
-var text = "";
-for (var x of T) {
-  text += x + "<br>";
+var text = "<ol>";
+for (var x=0; x< T.length; x++) {
+  text += "<li>" + x + "</li>";
 }
+text += "</ol>";
 document.getElementById("tracklist").innerHTML="<h3>daftar putar</h3>" + text;
 
 </script>
