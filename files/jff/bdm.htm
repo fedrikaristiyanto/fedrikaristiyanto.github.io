@@ -52,7 +52,8 @@ margin-right:auto;
 <button onclick="myPly()">&#x23ed;</button>
 </figure>
 
-
+<br>
+<div id="tracklist"></div>
 
 <script>
 //dataURL #10 Lagu
@@ -107,11 +108,17 @@ var aud = document.getElementById("tr");
 aud.src = Src[0];
 document.getElementById("tt").innerHTML=T[0];
 }
+
 function setColor() {
   let x = document.getElementById("fig");
   x.style.backgroundColor = x.style.backgroundColor == "red" ? "black" : "red";
 }
 
+var text = "";
+for (var x of T) {
+  text += x + "<br>";
+}
+document.getElementById("tracklist").innerHTML="<h3>daftar putar</h3>" + text;
 </script>
 
 <div id="footer">
