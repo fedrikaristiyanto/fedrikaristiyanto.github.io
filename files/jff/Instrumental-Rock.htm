@@ -22,6 +22,8 @@ right:8px;
 <p><i>Note: agar tdk terhenti musik playernya jgn di close window/tabnya, cukup diminimize aja. Selamat menikmati ! :)</i></p>
 </figure>
 
+<div id="tracklist"></div>
+
 <script>
 // #music_player_mini
 //dibatasi #5 lagu saja
@@ -79,8 +81,12 @@ audio.src=tr[0];
 document.getElementById("i").innerHTML=ttl[0];
 }
 
-
-
+var text = "<ol>";
+for (var x=0; x< T.length; x++) {
+  text += "<li>" + T[x] + "</li>";
+}
+text += "</ol>";
+document.getElementById("tracklist").innerHTML="<h3>Daftar Putar</h3>" + text;
 </script>
 
 <div id="footer">
