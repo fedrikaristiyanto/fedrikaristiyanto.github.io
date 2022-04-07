@@ -37,7 +37,7 @@ right:8px;
 
 <figure>
 <figcaption id="tt"></figcaption>
-<audio id="tr" onended="myPly()" controls>
+<audio id="tr" onended="myPly()" ontimeupdate="setColor()" controls>
 <source src="" type="audio/mpeg">
 </source>
 </audio>
@@ -108,6 +108,13 @@ var aud = document.getElementById("tr");
 aud.src = Src[0];
 document.getElementById("tt").innerHTML=T[0];
 }
+
+function setColor() {
+var x = document.getElementById("tt");
+x.style.color = x.style.color == "black" ? "lime" : "black";
+}
+
+
 </script>
 
 <div id="footer">
