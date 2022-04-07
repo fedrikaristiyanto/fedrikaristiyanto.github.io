@@ -40,9 +40,9 @@ margin-right:auto;
 
 <h3>Thrash Metal</h3>
 <img src="/image/polygon.svg" style="width:50px;transform:rotate(180deg);">
-<figure>
+<figure id="fig">
 <figcaption id="i"></figcaption>
-<audio id="track" src="" onended="playSquence()" controls></audio>
+<audio id="track" src="" onended="playSquence()" ontimeupdate="setBorder()" controls></audio>
 </figure>
 <script>
 
@@ -89,7 +89,10 @@ audio.src=tr[0];
 document.getElementById("i").innerHTML=ttl[0];
 }
 
-
+function setBorder() {
+var x = document.getElementById("fig");
+x.style.border = x.style.border == "2px solid #f00" ? "2px dashed #f00" : "2px solid #f00"
+}
 </script>
 <div id="footer">
 <address>fedrikaristiyanto.github.io</address>
