@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thrash Metal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-color:#000;
+color:#fff;
+}
+
+#footer{
+position:fixed;
+bottom:0;
+left:8px;
+right:8px;
+}
+
+img {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+</style>
+</head>
+<body onload="load1stTrack()">
+<h3>Thrash Metal</h3>
+<img src="/image/polygon.svg" style="width:50px;transform:rotate(180deg);">
+<figure>
+<figcaption id="i"></figcaption>
+<audio id="track" src="" onended="playSquence()" controls></audio>
+</figure>
+<script>
+
+var ttl=[]; var tr=[];
+
+ttl[0]="Kreator - Hordes Of Chaos";
+tr[0]="https://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB";
+
+ttl[1]="Destruction - Betrayal";
+tr[1]="https://docs.google.com/uc?export=open&id=12BiXfAIvTzKuRop9hEMtKh2Hg7qgt2k_";
+
+ttl[2]="Megadeth - Holy Wars... The Punishment Due";
+tr[2]="https://docs.google.com/uc?export=open&id=1s_DfjKvCHw3EAbUKVr5MQ6ZZwrRYuOBd";
+
+var n=0;
+
+function playSquence() {
+
+var audio = document.getElementById("track");
+n++;
+if (n >= tr.length){
+        n = 0;
+    }
+
+if (n==0){audio.src=tr[n];}
+else{
+audio.src = tr[n];
+audio.play();}
+
+if (n >= ttl.length){
+n=0;
+}
+document.getElementById("i").innerHTML=ttl[n];
+
+}
+
+function load1stTrack(){
+var audio = document.getElementById("track");
+audio.src=tr[0];
+document.getElementById("i").innerHTML=ttl[0];
+}
+
+
+</script>
+<div id="footer">
+<address>fedrikaristiyanto.github.io</address>
+</div>
+
+</body>
+</html>
