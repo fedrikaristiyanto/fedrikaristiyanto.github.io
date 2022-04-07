@@ -116,7 +116,7 @@ x.style.color = x.style.color == "black" ? "lime" : "black";
 
 var text = "<ol>";
 for (var x=0; x< T.length; x++) {
-  text += "<li>" + x + "</li>";
+  text += "<li>" + x[T]+ "</li>";
 }
 text += "</ol>";
 document.getElementById("tracklist").innerHTML="<h3>daftar putar</h3>" + text;
