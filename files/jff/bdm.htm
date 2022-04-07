@@ -114,10 +114,11 @@ function setColor() {
   x.style.backgroundColor = x.style.backgroundColor == "red" ? "black" : "red";
 }
 
-var text = "";
-for (var x of T) {
-  text += x + "<br>";
+var text = "<ol>";
+for (var x=0; x< T.length; x++) {
+  text += "<li>" + x[T]+ "</li>";
 }
+text += "</ol>";
 document.getElementById("tracklist").innerHTML="<h3>Track List</h3>" + text;
 </script>
 
