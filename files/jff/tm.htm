@@ -45,7 +45,7 @@ margin-right:auto;
 <audio id="track" src="" onended="playSquence()" ontimeupdate="setBorder()" controls></audio>
 </figure>
 <script>
-
+<div id="tracklist"></div>
 
 var ttl=[]; var tr=[];
 
@@ -93,6 +93,13 @@ function setBorder() {
 var x = document.getElementById("fig");
 x.style.border = x.style.border == "4px solid red" ? "4px dashed red" : "4px solid red";
 }
+
+var text = "<ol>";
+for (var x=0; x< ttl.length; x++) {
+  text += "<li>" + ttl[x] + "</li>";
+}
+text += "</ol>";
+document.getElementById("tracklist").innerHTML="<h3>Daftar Putar</h3>" + text;
 </script>
 <div id="footer">
 <address>fedrikaristiyanto.github.io</address>
