@@ -9,7 +9,7 @@
 <h3>penghitung karakter</h3>
 <textarea id="txt"></textarea>
 <button onclick="count()">count</button>
-<p>total character termasuk digit, spasi, new line, dan lainnya: <span id="o"></span></p>
+<p>total karakter: <span id="o"></span>,termasuk digit, spasi, new line, dan lainnya</p>
 <p>digit terhitung: <span id="D"></span></p>
 
 <p>huruf: <span id="lt"></span></p>
@@ -17,10 +17,10 @@
 function count(){
   var i = document.getElementById("txt").value;
   var dgit = new RegExp(/\d/g);
-  var lette = new RegExp(/[A-Za-z]/g);
+  var letter = new RegExp(/[A-Za-z]/g);
   var c = i.length;
   var d= i.match(dgit);
-var l = i.match(lette);
+var l = i.match(letter);
   document.getElementById("o").innerHTML=c;
 document.getElementById("D").innerHTML=d ? d.length : 0;
 document.getElementById("lt").innerHTML=l ? l.length : 0;
