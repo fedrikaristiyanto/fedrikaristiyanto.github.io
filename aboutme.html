@@ -22,10 +22,10 @@
 <script>
 function onplay(){
 var x = document.getElementById("aud");
-document.title=x.title;
+document.getElementById("np").innerHTML=x.title;
 }
 </script>
-
+<p id="np"></p>
 <audio id="aud"
   src="/files/Remember.mp3" onplay="writeTitle()" title="Stuart Hamm - ...Remember" autoplay>
   Your browser does not support the <code>audio</code> element.
