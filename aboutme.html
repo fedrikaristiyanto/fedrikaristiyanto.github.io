@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>About.Me</title>
@@ -19,7 +20,14 @@
 </head>
 <body>
 
-<audio
+<script>
+function writeTitle(){
+var x = document.getElementById("aud");
+document.getElementById("np").innerHTML=x.title;
+}
+</script>
+<p id="np"></p>
+<audio id="aud" onplay="writeTitle()"
   src="/files/Remember.mp3" title="Stuart Hamm - ...Remember" autoplay>
   Your browser does not support the <code>audio</code> element.
 </audio>
