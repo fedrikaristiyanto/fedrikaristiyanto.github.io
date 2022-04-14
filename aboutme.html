@@ -30,7 +30,7 @@ document.getElementById("np").innerHTML="";
 }
 </script>
 <p id="np"></p>
-<audio id="aud" onpause="empty()" onplay="writeTitle()"
+<audio id="aud" onended="empty()" onpause="empty()" onplay="writeTitle()"
   src="/files/Remember.mp3" title="Stuart Hamm - ...Remember" autoplay loop>
   Your browser does not support the <code>audio</code> element.
 </audio>
