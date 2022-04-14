@@ -23,17 +23,15 @@
 <script>
 function writeTitle(){
 var x = document.getElementById("aud");
-document.getElementById("i").innerHTML="Now Playing: ";
-document.getElementById("np").innerHTML=x.title;
+document.getElementById("np").innerHTML="Now Playing: " + x.title;
 }
 function empty (){
-document.getElementById("i").innerHTML="";
 document.getElementById("np").innerHTML="";
 }
 </script>
-<p id="i">
-<span id="np"></span>
-</p>
+
+<p id="np"></p>
+
 <audio id="aud" onended="empty()" onpause="empty()" onplay="writeTitle()"
   src="/files/Remember.mp3" title="Stuart Hamm - ...Remember" autoplay loop>
   Your browser does not support the <code>audio</code> element.
