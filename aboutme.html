@@ -19,8 +19,15 @@
 </head>
 <body>
 
-<audio
-  src="/files/Remember.mp3" autoplay>
+<script>
+function onplay(){
+var x = document.getElementById("aud");
+document.title=x.title;
+}
+</script>
+
+<audio id="aud"
+  src="/files/Remember.mp3" onplay="writeTitle()" title="Stuart Hamm - ...Remember" autoplay>
   Your browser does not support the <code>audio</code> element.
 </audio>
 
