@@ -121,11 +121,11 @@ function setColor() {
   x.style.backgroundColor = x.style.backgroundColor == "red" ? "black" : "red";
 }
 
-var text = "<ol>";
+var text = "<ul>";
 for (var x=0; x< T.length; x++) {
   text += "<li>" + T[x] + "</li>";
 }
-text += "</ol>";
+text += "</ul>";
 document.getElementById("tracklist").innerHTML="<h3>Daftar Putar</h3>" + text;
 </script>
 
