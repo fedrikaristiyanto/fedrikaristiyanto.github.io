@@ -102,11 +102,11 @@ audio.src=tr[0];
 document.getElementById("i").innerHTML=ttl[0];
 }
 
-var text = "<ol>";
+var text = "<ul class='list-group'>";
 for (var x=0; x< ttl.length; x++) {
-  text += "<li>" + ttl[x] + "</li>";
+  text += "<li class='list-group-item'>" + ttl[x] + "</li>";
 }
-text += "</ol>";
+text += "</ul>";
 document.getElementById("tracklist").innerHTML="<h3>Daftar Putar</h3>" + text;
 </script>
 
