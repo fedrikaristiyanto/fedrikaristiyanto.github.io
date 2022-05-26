@@ -12,5 +12,5 @@ for (let i = 0; i < unforgiven.length; i++){
     text += "<li>" + unforgiven[i]  + "</li>";
 }
 text += "</ul>"
-document.getElementById("Unforgiven").innerHTML=text;
+document.getElementById("Unforgiven").innerHTML="Download<br>"+text;
 }
