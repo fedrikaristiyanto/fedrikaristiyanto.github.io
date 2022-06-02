@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<style>
+@media print {
+button {display:none;}
+}
+</style>
+</head>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<button onclick="print()">Cetak</button>
+
+<script>
+var xValues = ["html", "css", "JS"];
+var yValues = [1, 1, 1];
+var barColors = [
+  "red",
+  "blue",
+  "yellow"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Front End Programming"
+    }
+  }
+});
+</script>
+
+</body>
+</html>
