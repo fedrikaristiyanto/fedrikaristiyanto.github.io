@@ -13,4 +13,4 @@ var ep = [
 "<a href='https://docs.google.com/uc?export=open&id=1suWF441WmWAw7cggCHnxh4cclps_-bEX'>Skewered from Ear to Eye</a>",
 "<a href='https://docs.google.com/uc?export=open&id=12wK2VU0Ivr48_v_R4MChMo5Q1AnqR-U_'>Skull Fragment Armor</a>"
 ];
-document.getElementById("Evisceration_Plague").innerHTML=ep.join(" <br> ");
+document.getElementById("Evisceration_Plague").innerHTML="download<br>" + ep.join(" <br> ");
