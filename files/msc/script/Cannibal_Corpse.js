@@ -7,7 +7,7 @@ var ep = [
 "<a href='https://docs.google.com/uc?export=download&id=1SkbSzwBLAly_RpI5xNK2jCwwJoCO2Rnk'>Evidence in the Furnace</a>",
 "<a href='https://docs.google.com/uc?export=download&id=1iu6cz5Udj4RrvjKfJ6wIqbsDUFqkT90s'>Carnivorous Swarm</a>",
 "<a href='https://docs.google.com/uc?export=download&id=1hVznbcDUvYMkCydBV0pmM43mgJujFcUU'>Evisceration Plague</a>",
-"<a href='https://docs.google.com/uc?export=open&id=177rDNArYCZDDy15ADt99VXckQYe84hcW'>Shatter Their Bones</a>",
+"<a href='https://docs.google.com/uc?export=download&id=177rDNArYCZDDy15ADt99VXckQYe84hcW'>Shatter Their Bones</a>",
 "<a href='https://docs.google.com/uc?export=open&id=1BdbN5LXKjmn2FX2PqHORj6il9EGvH2cO'>Carrion Sculpted Entity</a>",
 "<a href='https://docs.google.com/uc?export=open&id=1nlHFS8OtzOTNzAGDOvAAkE2X804qFr8Q'>Unnatural</a>",
 "<a href='https://docs.google.com/uc?export=open&id=1suWF441WmWAw7cggCHnxh4cclps_-bEX'>Skewered from Ear to Eye</a>",
