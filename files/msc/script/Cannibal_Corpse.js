@@ -11,6 +11,6 @@ var ep = [
 "<a href='https://docs.google.com/uc?export=download&id=1BdbN5LXKjmn2FX2PqHORj6il9EGvH2cO'>Carrion Sculpted Entity</a>",
 "<a href='https://docs.google.com/uc?export=download&id=1nlHFS8OtzOTNzAGDOvAAkE2X804qFr8Q'>Unnatural</a>",
 "<a href='https://docs.google.com/uc?export=download&id=1suWF441WmWAw7cggCHnxh4cclps_-bEX'>Skewered from Ear to Eye</a>",
-"<a href='https://docs.google.com/uc?export=open&id=12wK2VU0Ivr48_v_R4MChMo5Q1AnqR-U_'>Skull Fragment Armor</a>"
+"<a href='https://docs.google.com/uc?export=download&id=12wK2VU0Ivr48_v_R4MChMo5Q1AnqR-U_'>Skull Fragment Armor</a>"
 ];
 document.getElementById("Evisceration_Plague").innerHTML="Download<br><br>" + ep.join(" <br> ");
