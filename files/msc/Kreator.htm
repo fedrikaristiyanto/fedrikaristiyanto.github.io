@@ -23,12 +23,12 @@ color:#0f0;
 <script src="/files/msc/script/Kreator.js"></script>
 
 <!-- play squence -->
-
+<img id="myFan" src="https://images4.imagebam.com/89/c7/27/MEBIMCV_o.jpg" width="50" style="border-radius:50%">
 
 <p id="tt">
 Hordes of chaos
 </p>
-<audio id ="audi" controls onended ="myf()">
+<audio id ="audi" onplay="turnOn()" onpause="turnOff()" controls onended ="myf()">
 <source src="
 http://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB" type="audio/mpeg"></source>
 </audio>
@@ -68,6 +68,29 @@ document.getElementById("tt").innerHTML=ttl[n];
   
 
 
+</script>
+
+
+
+<script>
+
+let timer;
+let turn = 0;
+function turnOn() {
+  timer = setInterval(turnFan, 500);
+ 
+}
+
+function turnOff() {
+  clearInterval(timer);
+ 
+}
+
+function turnFan() {
+  let x = document.getElementById("myFan");
+  turn += 22.5;
+  x.style.transform = "rotate("+ (turn % 360) +"deg)"
+}
 </script>
 
 </body>
