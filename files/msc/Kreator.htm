@@ -25,20 +25,20 @@ right:8px;
 
 <img src="https://thumbs4.imagebam.com/4a/1f/38/MEBIMCV_t.jpg" alt="hordes-of-chaos.jpg"/>
 <h3>Hordes Of Chaos</h3>
+<audio id ="audi" controls onended ="myf()">
+<source src="
+http://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB" type="audio/mpeg"></source>
+</audio>
+
 <p id="HordesOfChaos"></p>
 <script src="/files/msc/script/Kreator.js"></script>
 
 <!-- play squence -->
-<img id="animasi" src="https://thumbs4.imagebam.com/4a/1f/38/MEBIMCV_t.jpg" width="50" style="border-radius:50%;border:1px solid silver;padding:1px;">
-</img>
 <p id="tt">
 Hordes of chaos
 </p>
-<audio id ="audi" onplay="turnOn()" onpause="turnOff()" controls onended ="myf()">
-<source src="
-http://docs.google.com/uc?export=open&id=1ugpDh5YKOraqgB3pepLIutxeURaRgXKB" type="audio/mpeg"></source>
-</audio>
-<br>
+
+
 
 <script>
 var ttl=[];
@@ -79,31 +79,9 @@ document.getElementById("tt").innerHTML=ttl[n];
 
   
 
-
 </script>
 
 
-
-<script>
-
-let timer;
-let turn = 0;
-function turnOn() {
-  timer = setInterval(Animasi, 100);
- 
-}
-
-function turnOff() {
-  clearInterval(timer);
- 
-}
-
-function Animasi() {
-  let x = document.getElementById("animasi");
-  turn += 22.5;
-  x.style.transform = "rotate("+ (turn % 360) +"deg)"
-}
-</script>
 
 <div id="footer">
 <address>fedrikaristiyanto.github.io</address>
