@@ -13,7 +13,9 @@
 </head>
 <body>
 <div class="container-fluid">
+<div class="jumbotron">
 <h1>Satuan Berat</h1>
+</div>
 <p>
 KiloGrams
 <input id="inputKG" type="number" placeholder="value" oninput="KGtoOtherUnits(this.value)">
@@ -22,7 +24,7 @@ HectoGrams: <input id="outputHG" type="number" placeholder="value"><br>
 DekaGrams: <input id="outputDAG" type="number"><br>
 Grams: <input id="outputGrams" type="number"><br>
 DeciGrams: <input id="outputDG" type="number"><br>
-CentiGrams:<br>
+CentiGrams:<input id="outputCG" type="number"><br>
 MiliGrams: <span id="outputMG"></span>
 </p>
 
@@ -32,6 +34,7 @@ document.getElementById("outputHG").value=valNum*10;
 document.getElementById("outputDAG").value=valNum*100;
 document.getElementById("outputGrams").value=valNum*1000;
 document.getElementById("outputDG").value=valNum*10000;
+document.getElementById("outputCG").value=valNum*100000;
 document.getElementById("outputMG").innerHTML=valNum*1000000;
 }
 </script>
