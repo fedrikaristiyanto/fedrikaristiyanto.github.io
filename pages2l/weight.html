@@ -19,7 +19,7 @@ KiloGrams
 <br>
 HectoGrams: <input id="outputHG" type="number"><br>
 DekaGrams: <input id="outputDAG" type="number"><br>
-Grams: <span id="outputGrams"></span><br>
+Grams: <input id="outputGrams" type="number"></input><br>
 DeciGrams: <span id="outputDG"></span><br>
 MiliGrams: <span id="outputMG"></span>
 </p>
@@ -28,7 +28,7 @@ MiliGrams: <span id="outputMG"></span>
 function KGtoOtherUnits(valNum) {
 document.getElementById("outputHG").value=valNum*10;
 document.getElementById("outputDAG").value=valNum*100;
-document.getElementById("outputGrams").innerHTML=valNum*1000;
+document.getElementById("outputGrams").value=valNum*1000;
 document.getElementById("outputDG").innerHTML=valNum*10000;
 document.getElementById("outputMG").innerHTML=valNum*1000000;
 }
