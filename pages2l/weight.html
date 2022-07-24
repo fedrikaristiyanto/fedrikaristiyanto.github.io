@@ -6,18 +6,18 @@
 <body>
 <p>
 <label>KiloGrams</label>
-<input id="inputKG" type="number" placeholder="masukkan nilai" oninput="weightConverter(this.value)">
+<input id="inputKG" type="number" placeholder="masukkan nilai" oninput="KGtoOtherUnits(this.value)">
 </p>
 <p>
-HectoGrams: <span id="outputHG"></span><br>
+HectoGrams: <input id="outputHG" type="number"><br>
 DekaGrams: <span id="outputDAG"></span><br>
 Grams: <span id="outputGrams"></span><br>
 DeciGrams: <span id="outputDG"></span><br>
 MiliGrams: <span id="outputMG"></span>
 </p>
 <script>
-function weightConverter(valNum) {
-document.getElementById("outputHG").innerHTML=valNum*10;
+function KGtoOtherUnits(valNum) {
+document.getElementById("outputHG").value=valNum*10;
 document.getElementById("outputDAG").innerHTML=valNum*100;
 document.getElementById("outputGrams").innerHTML=valNum*1000;
 document.getElementById("outputDG").innerHTML=valNum*10000;
