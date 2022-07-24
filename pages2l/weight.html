@@ -27,7 +27,8 @@
 <input class="form-control" id="outputDAG" type="number" placeholder="dekagrams" oninput="DAGtoOtherUnits(this.value)"><br>
 
 <label for="outputGrams">grams (g)</label>
-<input class="form-control" id="outputGrams" type="number" placeholder="grams"><br>
+<input class="form-control" id="outputGrams" type="number" placeholder="grams" oninput="Grams2OtherUnits(this.value)"><br>
+
 DeciGrams: <input id="outputDG" type="number" placeholder="decigrams"><br>
 CentiGrams:<input id="outputCG" type="number" placeholder="centigrams"><br>
 MiliGrams: <input id="outputMG" type="number" placeholder="miligrams">
@@ -69,7 +70,9 @@ function Grams2OtherUnits(valNum){
 document.getElementById("inputKG").value=valNum/1000; // dibagi 1000
 document.getElementById("outputHG").value=valNum/100; // dibagi 100
 document.getElementById("outputDAG").value=valNum/10; // dibagi 10
-
+document.getElementById("outputDG").value=valNum*10; // dikalikan 10
+document.getElementById("outputCG").value=valNum*100; // dikalikan 100
+document.getElementById("outputMG").value=valNum*1000; // dikalikan 1000
 }
 
 </script>
