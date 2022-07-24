@@ -18,7 +18,7 @@
 </div>
 <p>
 <label for="inputKG">KG:</label><input class="input" id="inputKG" type="number" placeholder="value" oninput="KGtoOtherUnits(this.value)"><br>
-<label for="inputHG">HG:</label><input class="input" id="outputHG" type="number" placeholder="value"><br>
+<label for="inputHG">HG:</label><input class="input" id="outputHG" type="number" placeholder="value" oninput="HGtoOtherUnits(this.value)"><br>
 DekaGrams: <input id="outputDAG" type="number" placeholder="value"><br>
 Grams: <input id="outputGrams" type="number" placeholder="value"><br>
 DeciGrams: <input id="outputDG" type="number"><br>
@@ -38,7 +38,8 @@ document.getElementById("outputMG").value=valNum*1000000;
 }
 
 //hg ke satuan lain
-function HGtoOtherUnits(){
+function HGtoOtherUnits(valNum){
+document.getElementById("inputKG").value=valNum/10; 
 
 }
 
