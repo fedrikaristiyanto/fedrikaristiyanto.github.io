@@ -39,10 +39,12 @@ document.getElementById("outputMG").value=valNum*1000000;
 
 //hg ke satuan lain
 function HGtoOtherUnits(valNum){
-document.getElementById("inputKG").value=valNum/10; //dibagi 10
+document.getElementById("inputKG").value=valNum/10; // dibagi 10
 document.getElementById("outputDAG").value=valNum*10; 
 document.getElementById("outputGrams").value=valNum*100; 
-
+document.getElementById("outputDG").value=valNum*1000; 
+document.getElementById("outputCG").value=valNum*10000; 
+document.getElementById("outputMG").value=valNum*100000; 
 }
 
 </script>
