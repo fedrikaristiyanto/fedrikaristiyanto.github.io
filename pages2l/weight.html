@@ -20,10 +20,10 @@
 <input id="inputKG" type="number" placeholder="kilograms" oninput="KGtoOtherUnits(this.value)"><label for="inputKG">KG</label><br>
 <input id="outputHG" type="number" placeholder="hectograms" oninput="HGtoOtherUnits(this.value)"><label for="outputHG">HG</label><br>
 <input id="outputDAG" type="number" placeholder="dekagrams"><label for="outputDAG">DAG</label><br>
-Grams: <input id="outputGrams" type="number" placeholder="value"><br>
-DeciGrams: <input id="outputDG" type="number"><br>
-CentiGrams:<input id="outputCG" type="number"><br>
-MiliGrams: <input id="outputMG" type="number">
+Grams: <input id="outputGrams" type="number" placeholder="grams"><br>
+DeciGrams: <input id="outputDG" type="number" placeholder="decigrams"><br>
+CentiGrams:<input id="outputCG" type="number" placeholder="centigrams"><br>
+MiliGrams: <input id="outputMG" type="number" placeholder="miligrams">
 </p>
 
 <script>
@@ -41,6 +41,7 @@ document.getElementById("outputMG").value=valNum*1000000;
 function HGtoOtherUnits(valNum){
 document.getElementById("inputKG").value=valNum/10; //dibagi 10
 document.getElementById("outputDAG").value=valNum*10; 
+document.getElementById("outputGrams").value=valNum*100; 
 
 }
 
