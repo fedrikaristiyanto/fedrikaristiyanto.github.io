@@ -13,6 +13,7 @@
 </head>
 <body>
 <div class="container-fluid">
+<h1>Satuan Berat</h1>
 <p>
 KiloGrams
 <input id="inputKG" type="number" placeholder="value" oninput="KGtoOtherUnits(this.value)">
@@ -21,9 +22,10 @@ HectoGrams: <input id="outputHG" type="number" placeholder="value"><br>
 DekaGrams: <input id="outputDAG" type="number"><br>
 Grams: <input id="outputGrams" type="number"><br>
 DeciGrams: <input id="outputDG" type="number"><br>
+CentiGrams:<br>
 MiliGrams: <span id="outputMG"></span>
 </p>
-</div>
+
 <script>
 function KGtoOtherUnits(valNum) {
 document.getElementById("outputHG").value=valNum*10;
@@ -33,5 +35,6 @@ document.getElementById("outputDG").value=valNum*10000;
 document.getElementById("outputMG").innerHTML=valNum*1000000;
 }
 </script>
+</div>
 </body>
 </html>
