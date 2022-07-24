@@ -32,7 +32,9 @@
 <label for="outputDG">decigrams (dg)</label>
 <input class="form-control" id="outputDG" type="number" placeholder="decigrams" oninput="DGtoOtherUnits(this.value)"><br>
 
-CentiGrams:<input id="outputCG" type="number" placeholder="centigrams"><br>
+<label for="outputCG">centigrams (cg)</label>
+<input class="form-control" id="outputCG" type="number" placeholder="centigrams"><br>
+
 MiliGrams: <input id="outputMG" type="number" placeholder="miligrams">
 </p>
 
@@ -85,6 +87,16 @@ document.getElementById("outputDAG").value=valNum/100;
 document.getElementById("outputGrams").value=valNum/10;
 document.getElementById("outputCG").value=valNum*10; // dikalikan 10
 document.getElementById("outputMG").value=valNum*100; // dikalikan 100
+}
+
+// cg ke satuan lain
+function CGtoOtherUnits(valNum){
+
+}
+
+// mg ke satuan lain
+function MGtoOtherUnits(valNum){
+
 }
 
 </script>
