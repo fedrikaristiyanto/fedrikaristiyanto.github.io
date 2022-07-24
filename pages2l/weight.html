@@ -35,7 +35,8 @@
 <label for="outputCG">centigrams (cg)</label>
 <input class="form-control" id="outputCG" type="number" placeholder="centigrams" oninput="CGtoOtherUnits(this.value)"><br>
 
-MiliGrams: <input id="outputMG" type="number" placeholder="miligrams">
+<label for="outputMG">miligrams (mg)</label>
+<input id="outputMG" type="number" placeholder="miligrams" oninput="MGtoOtherUnits(this.value)">
 </p>
 
 <script>
@@ -101,7 +102,7 @@ document.getElementById("outputMG").value=valNum*10; //dikalikan 10
 
 // mg ke satuan lain
 function MGtoOtherUnits(valNum){
-
+document.getElementById("inputKG").value=valNum/1000000;
 }
 
 </script>
