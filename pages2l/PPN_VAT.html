@@ -13,14 +13,18 @@
 </head>
 <body>
 
-<div data-ng-app="" data-ng-init="price=50000;taxrate=5;">
 
 <h2 id="header">TAX (VAT or GST) Calculator</h2>
 
 <div class="pagination">
-<a href="/index.html">index</a>
+<a href="/index.html">INDEX</a>
 <a class="active">VAT Calculator</a>
 </div>
+<br>
+
+<div data-ng-app="" data-ng-init="price=50000;taxrate=5;">
+
+
 
 Price: <input type="number" ng-model="price" placeholder="input price"><br>
 Tax rate: <input style="width:50px;" type="number" ng-model="taxrate" placeholder="input tax rate">%
