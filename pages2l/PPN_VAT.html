@@ -5,12 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <link href="/css/hf.css"  rel="stylesheet" type="text/css" />
+
+
+<link href="/css/pagination.css"  rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>
 
 <div data-ng-app="" data-ng-init="price=50000;taxrate=5;">
 
 <h2 id="header">TAX (VAT or GST) Calculator</h2>
+
+<div class="pagination">
+<a href="/index.html">index</a>
+<a class="active">VAT Calculator</a>
+</div>
 
 Price: <input type="number" ng-model="price" placeholder="input price"><br>
 Tax rate: <input style="width:50px;" type="number" ng-model="taxrate" placeholder="input tax rate">%
