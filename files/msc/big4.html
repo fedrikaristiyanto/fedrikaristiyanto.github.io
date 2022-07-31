@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>American big 4 thrash metal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- angularjs lib -->
@@ -11,6 +12,7 @@
 <div ng-app="myApp" ng-controller="BandsCtrl"> 
 
 <table>
+  <tr><th>Band Name</th><th>City</th><th>Country</th></tr>
   <tr ng-repeat="x in bands">
     <td>{{ x.Band }}</td>
     <td>{{ x.City }}</td>
