@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="BandsCtrl"> 
+
+<table>
+  <tr ng-repeat="x in bands">
+    <td>{{ x.Band }}</td>
+    <td>{{ x.City }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('BandsCtrl', function($scope, $http) {
+    $http.get("big4.php")
+    .then(function (response) {$scope.bands = response.data.records;});
+});
+</script>
+
+</body>
+</html>
