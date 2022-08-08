@@ -1,4 +1,4 @@
-/*css class bg pelangi*/
+/*css class background pelangi*/
 .pelangi{
   background-color: DeepSkyBlue; /* Utk browser yg gk support CSS gradien */
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
