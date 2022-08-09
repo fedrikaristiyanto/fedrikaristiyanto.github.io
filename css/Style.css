@@ -2,7 +2,12 @@ body{
 margin:0;
 font-family:'courier new';
 }
+.container{
+margin:1px;
+padding:25px;
+}
 .darkMode{
 background-color:black;
 color:white;
 }
+
