@@ -2,9 +2,16 @@ body{
 margin:0;
 font-family:'courier new';
 }
+
 .container{
 margin:1px;
 padding:25px;
+}
+.header{
+padding:50px;
+background-color:lightgray;
+text-align:center;
+font-size:30px;
 }
 .darkMode{
 background-color:black;
