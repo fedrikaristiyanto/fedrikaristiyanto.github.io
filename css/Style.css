@@ -15,7 +15,9 @@ text-align:center;
 font-size:30px;
 }.footer{
 padding:10px;
+background-color:lightgray;
 text-align:center;
+font-size:small;
 font-style:italic;
 }
 
