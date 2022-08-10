@@ -33,6 +33,11 @@ display:inline-block;
   float: left;
   padding: 8px;
   text-decoration: none;
-  border:1px solid #ddd;
+  border:1px solid lightgray;
+}.pagination a.active {
+  background-color:lightgray;
+  border:1px solid lightgray;
 }
+
+
 
