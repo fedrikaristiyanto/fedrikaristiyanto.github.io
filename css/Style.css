@@ -37,7 +37,8 @@ display:inline-block;
 }.pagination a.active {
   background-color:lightgray;
   border:1px solid lightgray;
+}.pagination a:hover:not(.active){
+  background-color: lightgray;
 }
-
 
 
