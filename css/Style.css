@@ -1,11 +1,12 @@
+
 body{
 margin:0;
 font-family:'courier new';
 }
 
-.container{
-margin:1px;
-padding:25px;
+.DarkMode{
+background-color:black;
+color:white;
 }
 
 .header{
@@ -13,7 +14,11 @@ padding:50px;
 background-color:lightgray;
 text-align:center;
 font-size:30px;
-}.footer{
+}
+.container{
+padding:25px;
+}
+.footer{
 padding:10px;
 background-color:lightgray;
 text-align:center;
@@ -21,8 +26,8 @@ font-size:small;
 font-style:italic;
 }
 
-.DarkMode{
-background-color:black;
-color:white;
+/*pagination*/
+.pagination{
+
 }
 
