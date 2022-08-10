@@ -47,3 +47,14 @@ display:inline-block;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/*button*/
+.button{
+border:1px solid dodgerblue;
+border-radius:10px;
+background-color:white;
+color:dodgerblue;
+padding:10px;
+text-align:center;
+cursor:pointer;
+}
