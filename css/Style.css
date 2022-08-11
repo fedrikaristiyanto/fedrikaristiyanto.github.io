@@ -10,7 +10,7 @@ color:white;
 
 .header{
 padding:50px;
-background-color:lightgray;
+background-color:dodgerblue;
 text-align:center;
 font-size:30px;
 }
@@ -19,10 +19,9 @@ padding:25px;
 }
 .footer{
 padding:10px;
-background-color:lightgray;
+background-color:dodgerblue;
 text-align:center;
-font-size:small;
-font-style:italic;
+font-size:small;font-style:italic;
 }
 
 /*pagination*/
