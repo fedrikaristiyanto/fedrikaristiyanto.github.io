@@ -49,11 +49,24 @@ display:inline-block;
 
 /*button*/
 .button{
-border:1px solid dodgerblue;
-border-radius:10px;
-background-color:white;
-color:dodgerblue;
+border:1px solid dodgerblue;border-radius:10px;
+background-color:white;color:dodgerblue;
 padding:10px;
 text-align:center;
 cursor:pointer;
 }
+
+/*table*/
+.table{
+border:1px solid #C0C0C0;
+border-collapse:collapse;
+padding:5px;
+}.table th {
+border:1px solid #C0C0C0;
+padding:5px;
+background:#F0F0F0;
+}.table td {
+border:1px solid #C0C0C0;
+padding:5px;
+}
+
