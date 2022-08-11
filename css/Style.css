@@ -61,7 +61,7 @@ cursor:pointer;
 border:1px solid #C0C0C0;
 border-collapse:collapse;
 padding:5px;
-}.demo caption {
+}.table caption {
 caption-side:top;
 text-align:center;
 }.table th {
