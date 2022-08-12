@@ -20,9 +20,10 @@ font-size:small;font-style:italic;
 }
 
 /*input*/
-input[type=number]{
+input, input[type=number]{
 width:75%;
 padding:4px;
+border-radius:4px;
 box-sizing:border-box;
 }
 
