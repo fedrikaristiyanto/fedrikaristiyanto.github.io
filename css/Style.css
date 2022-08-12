@@ -3,11 +3,6 @@ margin:0;
 font-family:'courier new';
 }
 
-.DarkMode{
-background-color:black;
-color:white;
-}
-
 .header{
 padding:50px;
 background-color:#f0f0f0;
@@ -22,6 +17,13 @@ padding:10px;
 background-color:#f0f0f0;
 text-align:center;
 font-size:small;font-style:italic;
+}
+
+/*input*/
+input[type=number]{
+width:100%;
+padding:2px;
+box-sizing:border-box;
 }
 
 /*pagination*/
