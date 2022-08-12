@@ -21,8 +21,8 @@ font-size:small;font-style:italic;
 
 /*input*/
 input[type=number]{
-width:100%;
-padding:2px;
+width:75%;
+padding:4px;
 box-sizing:border-box;
 }
 
