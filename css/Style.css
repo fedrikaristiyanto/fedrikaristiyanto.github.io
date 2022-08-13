@@ -21,21 +21,23 @@ font-size:small;font-style:italic;
 
 /*input*/
 input, input[type=number]{
-width:75%;
-padding:4px;
+  width:75%;
+  padding:4px;
 border-radius:4px;
 box-sizing:border-box;
 }
 
 /*nav*/
-.nav{
-display: inline-block;
+.nav a{
+  display: inline-block;
   color: black;
   text-align: center;
   padding: 10px;
   text-decoration: none;
   font-size: 15px;
   border-radius: 4px;
+}.nav a:hover{
+
 }
 
 /*pagination*/
