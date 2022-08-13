@@ -37,6 +37,9 @@ box-sizing:border-box;
   font-size: 15px;
   border-radius: 4px;
 }.nav a:hover{
+  background-color: #f0f0f0;
+  color: black;
+}.nav a.active{
 
 }
 
@@ -64,7 +67,7 @@ display:inline-block;
 }
 
 /*button*/
-.button{
+button{
 border:1px solid dodgerblue;border-radius:10px;
 background-color:white;color:dodgerblue;
 padding:10px;
