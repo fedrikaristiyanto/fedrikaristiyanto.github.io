@@ -40,7 +40,7 @@ padding:5px 10px;
 text-align:center;
 cursor:pointer;
 }
-input[type=reset{
+input[type=reset]{
 border:1px solid crimson;border-radius:10px;
 background-color:white;color:crimson;
 padding:5px 10px;
