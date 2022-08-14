@@ -74,7 +74,7 @@ display:inline-block;
 }
 
 /*button*/
-button{
+button, input[type=button]{
 border:1px solid dodgerblue;border-radius:10px;
 background-color:white;color:dodgerblue;
 padding:5px 10px;
