@@ -25,7 +25,7 @@ text-align:center;
 font-size:small;font-style:italic;
 }
 
-/*input*/
+/*input & button*/
 input[type=text], input[type=number]{
   width:75%;
   padding:4px;
@@ -33,7 +33,6 @@ border-radius:4px;
 box-sizing:border-box;
 }
 
-/*button*/
 button, input[type=button]{
 border:1px solid dodgerblue;border-radius:10px;
 background-color:white;color:dodgerblue;
@@ -41,6 +40,14 @@ padding:5px 10px;
 text-align:center;
 cursor:pointer;
 }
+input[type=reset{
+border:1px solid crimson;border-radius:10px;
+background-color:white;color:crimson;
+padding:5px 10px;
+text-align:center;
+cursor:pointer;
+}
+
 
 /*nav*/
 .nav a{
