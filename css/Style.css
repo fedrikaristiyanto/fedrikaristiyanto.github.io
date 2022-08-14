@@ -2,8 +2,13 @@ html, body{
 height:100%;
 margin:0;
 }
+@font-face{
+font-family:"vt323";
+src: url("/fonts/vt323/VT323-Regular.ttf");
+}
+
 *{
-font-family:'courier new';
+font-family:"vt323";
 }
 
 .header{
