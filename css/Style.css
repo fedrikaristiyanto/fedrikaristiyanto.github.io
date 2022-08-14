@@ -26,7 +26,7 @@ font-size:small;font-style:italic;
 }
 
 /*input*/
-input, input[type=number]{
+input[type=text], input[type=number]{
   width:75%;
   padding:4px;
 border-radius:4px;
