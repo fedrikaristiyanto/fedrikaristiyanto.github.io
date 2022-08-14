@@ -1,5 +1,8 @@
-body{
+html, body{
+height:100%;
 margin:0;
+}
+*{
 font-family:'courier new';
 }
 
@@ -12,6 +15,7 @@ font-size:30px;
 
 .container{
 padding:25px;
+height:100%;
 }
 
 .footer{
