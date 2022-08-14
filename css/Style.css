@@ -33,7 +33,7 @@ border-radius:4px;
 box-sizing:border-box;
 }
 
-button, input[type=button]{
+button, input[type=button], input[type=submit]{
 border:1px solid dodgerblue;border-radius:10px;
 background-color:white;color:dodgerblue;
 padding:5px 10px;
