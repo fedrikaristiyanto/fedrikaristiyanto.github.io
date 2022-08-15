@@ -4,7 +4,7 @@ margin:0;
 }
 @font-face{
 font-family:"vt323";
-src: url("/fonts/vt323/VT323-Regular.ttf");
+src: url("https://fedrikaristiyanto.github.io/fonts/vt323/VT323-Regular.ttf");
 }
 
 *{
