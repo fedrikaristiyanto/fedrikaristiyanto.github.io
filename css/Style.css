@@ -79,17 +79,16 @@ cursor:pointer;
 .dropdown-content {
   display: none;
  position: absolute;
- background-color:#f0f0f0;
- min-width:150px;
- z-index:1;
 }
 .dropdown-content a{
 text-align:center;
+background-color:#f0f0f0;
+width:150px;
 }
 
 .dropdown-content a:hover{
 background-color:#f9f9f9;
-min-width:150px;
+width:150px;
 }
 
 .dropdown:hover .dropdown-content {
