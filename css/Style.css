@@ -70,6 +70,20 @@ cursor:pointer;
   background-color: dodgerblue;
   color: white;
 }
+/*dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+ position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*pagination*/
 .pagination{
