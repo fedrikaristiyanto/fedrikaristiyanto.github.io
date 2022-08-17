@@ -80,8 +80,6 @@ cursor:pointer;
   display: none;
  position: absolute;
 background-color:#f0f0f0;
-min-width:150px;
-z-index:1;
 }
 .dropdown-content a{display:block;}
 
