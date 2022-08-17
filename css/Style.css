@@ -79,6 +79,7 @@ cursor:pointer;
 .dropdown-content {
   display: none;
  position: absolute;
+z-index:1;
 }
 .dropdown-content a{
 background-color:#f0f0f0;
