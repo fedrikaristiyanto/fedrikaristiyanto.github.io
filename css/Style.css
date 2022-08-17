@@ -84,7 +84,7 @@ cursor:pointer;
  z-index:1;
 }
 .dropdown-content a{
-text-align:left;
+text-align:center;
 }
 
 .dropdown-content a:hover{
