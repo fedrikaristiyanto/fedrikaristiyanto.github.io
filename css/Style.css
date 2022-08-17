@@ -79,6 +79,7 @@ cursor:pointer;
 .dropdown-content {
   display: none;
  position: absolute;
+min-width:150px;
 }
 
 .dropdown:hover .dropdown-content {
