@@ -81,17 +81,14 @@ cursor:pointer;
  position: absolute;
 }
 .dropdown-content a{
-text-align:center;
 background-color:#f0f0f0;
-width:150px;
 }
 
 .dropdown-content a:hover{
 background-color:#f9f9f9;
-width:150px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
   display: block;
 }
 
