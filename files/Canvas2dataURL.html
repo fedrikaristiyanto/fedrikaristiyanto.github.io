@@ -9,7 +9,7 @@
 Your browser does not support the canvas element.
 </canvas>
 <br>
-<input value="Abc" id="inp" placeholder="write something">
+<input value="Abc" id="inp" placeholder="write something"><br>
 <select id="Font">
 <option value="Arial">Arial</option>
 <option value="Courier New">Courier New</option>
@@ -17,6 +17,7 @@ Your browser does not support the canvas element.
 <option value="Times New Roman">Times New Roman</option>
 </select>
 <br>
+<input type="color" id="Color" value="#00ff00"><br>
 <input type="button" onclick="Write()" value="apply">
 <h3>PNG</h3>
 <img id="imge" src="">
@@ -27,13 +28,14 @@ Your browser does not support the canvas element.
 <script>
 
 function Write() {
+var Color = document.getElementById("Color");
 var fontStyle = document.getElementById("Font").value;
 var tx= document.getElementById("inp").value;
 var canvas = document.getElementById("myCanvas");
 var ctx=canvas.getContext("2d");
 ctx.clearRect(0, 0,canvas.width, canvas.height);
 ctx.font="50px "+ fontStyle;
-ctx.fillStyle = "magenta";
+ctx.fillStyle = Color.value;
 ctx.textAlign = "center";
 ctx.fillText(tx, canvas.width/2, canvas.height/2);
 var dataurl = canvas.toDataURL('image/png', 1.0);
