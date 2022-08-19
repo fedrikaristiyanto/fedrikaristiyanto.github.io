@@ -2,6 +2,7 @@
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
 <h3>canvas preview</h3>
@@ -9,7 +10,12 @@
 Your browser does not support the canvas element.
 </canvas>
 <br>
-<input id="inp" placeholder="write something"><br>
+<input value="Abc" id="inp" placeholder="write something">
+<select id="Font">
+<option value="cursive">Cursive</option>
+<option value="Sofia">Sofia</option>
+</select>
+<br>
 <input type="button" onclick="Write()" value="apply">
 <h3>PNG</h3>
 <img id="imge" src="">
@@ -20,14 +26,15 @@ Your browser does not support the canvas element.
 <script>
 
 function Write() {
+var fontStyle = document.getElementById("Font").value;
 var tx= document.getElementById("inp").value;
 var canvas = document.getElementById("myCanvas");
 var ctx=canvas.getContext("2d");
 ctx.clearRect(0, 0,canvas.width, canvas.height);
-ctx.font="50px Cursive";
-ctx.strokeStyle = "magenta";
+ctx.font="50px "+ fontStyle;
+ctx.fillStyle = "magenta";
 ctx.textAlign = "center";
-ctx.strokeText(tx, canvas.width/2, canvas.height/2);
+ctx.fillText(tx, canvas.width/2, canvas.height/2);
 var dataurl = canvas.toDataURL('image/png', 1.0);
 document.getElementById("imge").src=dataurl;
 }
@@ -35,7 +42,6 @@ document.getElementById("imge").src=dataurl;
 
 </body>
 </html>
-
 
 
 
