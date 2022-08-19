@@ -12,15 +12,18 @@ Your browser does not support the canvas element.
 <br>
 <input id="inp" placeholder="write something"><br>
 <input type="button" onclick="Write()" value="apply">
-
-<a id="dta" href="" download="Image">save</a>
+<h3>png preview</h3>
+<a id="dta" href="">
+<img id="image" src="">
+</a>
 
 
 
 <script>
+
+function Write() {
 var tx= document.getElementById("inp").value;
 var canvas = document.getElementById("myCanvas");
-function Write() {
 var ctx=canvas.getContext("2d");
 ctx.clearRect(0, 0,canvas.width, canvas.height);
 ctx.font="50px Cursive";
@@ -28,6 +31,7 @@ ctx.strokeStyle = "magenta";
 ctx.textAlign = "center";
 ctx.strokeText(tx, canvas.width/2, canvas.height/2);
 var dataurl = canvas.toDataURL('image/png', 1.0);
+document.getElementById("inget").src=dataurl;
 document.getElementById("dta").href=dataurl;
 }
 </script>
