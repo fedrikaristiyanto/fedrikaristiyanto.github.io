@@ -4,7 +4,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+<h3>canvas preview</h3>
 <canvas id="myCanvas" width="400" height="200"
 style="border:2px solid black;">
 Your browser does not support the canvas element.
@@ -18,12 +18,11 @@ Your browser does not support the canvas element.
 
 
 <script>
-function Write() {
 var tx= document.getElementById("inp").value;
 var canvas = document.getElementById("myCanvas");
+function Write() {
 var ctx=canvas.getContext("2d");
 ctx.clearRect(0, 0,canvas.width, canvas.height);
-
 ctx.font="50px Cursive";
 ctx.strokeStyle = "magenta";
 ctx.textAlign = "center";
