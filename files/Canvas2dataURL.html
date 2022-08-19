@@ -12,10 +12,8 @@ Your browser does not support the canvas element.
 <input id="inp" placeholder="write something"><br>
 <input type="button" onclick="Write()" value="apply">
 <h3>png preview</h3>
-
-<a id="dta" href="">
 <img id="imge" src="">
-</a>
+
 
 
 
@@ -31,7 +29,6 @@ ctx.strokeStyle = "magenta";
 ctx.textAlign = "center";
 ctx.strokeText(tx, canvas.width/2, canvas.height/2);
 var dataurl = canvas.toDataURL('image/png', 1.0);
-document.getElementById("dta").href=dataurl;
 document.getElementById("imge").src=dataurl;
 }
 </script>
