@@ -1,1 +1,1 @@
-kunjungi <fedrikaristiyanto.github.io>
+kunjungi <https://fedrikaristiyanto.github.io>
