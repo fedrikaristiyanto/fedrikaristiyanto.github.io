@@ -53,7 +53,14 @@ var x = document.getElementById("JPG");
     x.style.display = "none";
   }
 }
-// function togglePNG(){}
+function togglePNG(){
+var x = document.getElementById("PNG");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 
 </head>
@@ -104,7 +111,8 @@ var x = document.getElementById("JPG");
 
 <br><br>
 <h4>PNG</h4>
-<div id="PNG">
+<button onclick="togglePNG()">hide/show</button>
+<div id="PNG" style="display:none;">
 <figure style="display:inline-block;">
 <img src="/image/emoticons/Sm.png" width="50px"><figcaption>
 <a class="dl" href="/image/emoticons/Sm.png" download>download</a></figcaption>
