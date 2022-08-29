@@ -45,7 +45,14 @@ function toggleSVG() {
     x.style.display = "none";
   }
 }
-//function toggleJPG(){}
+function toggleJPG(){
+var x = document.getElementById("JPG");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 // function togglePNG(){}
 </script>
 
@@ -82,7 +89,8 @@ function toggleSVG() {
 
 <br><br>
 <h4>JPG</h4>
-<div id="JPG">
+<button onclick="toggleJPG()">hide/show</button>
+<div id="JPG" style="display:none;">
 <figure style="display:inline-block;">
 <image src="/image/jpg/notebook.jpeg" width="50px"><figcaption>
 <a class="dl" href="/image/jpg/notebook.jpeg" download>download</a></figcaption>
