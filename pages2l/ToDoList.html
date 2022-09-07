@@ -56,6 +56,15 @@ for (i = 0; i < close.length; i++) {
 }
 
 
+// checked symbol
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+
 // add task
 function newTask(){
 var List = document.createElement("li");
