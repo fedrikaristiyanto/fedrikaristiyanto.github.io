@@ -81,6 +81,19 @@ var txt = document.createTextNode(inputValue);
   } else {
     document.getElementById("MyToDoList").appendChild(List);
   }
+
+var span = document.createElement("span");
+  var txt = document.createTextNode("&times;");
+  span.className = "closeButton";
+  span.appendChild(txt);
+  List.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
 }
 </script>
 </body>
