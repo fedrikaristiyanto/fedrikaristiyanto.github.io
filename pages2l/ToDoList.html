@@ -5,6 +5,14 @@
 
 <!-- CSS -->
 <style>
+input[type=text] {
+  margin: 0;
+  border: none;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+}
+
 ul{
 list-style-type:none;
 margin: 0;
@@ -42,11 +50,11 @@ ul li.checked::before {
 </style>
 </head>
 <body>
-<div class="Input">
+
 <h3>to do list</h3>
 <input type="text" id="inputTask">
 <input type="button" class="Button" onclick="newTask()" value="add">
-</div>
+
 
 <ul id="MyToDoList">
 <li class="checked">mandi</li>
