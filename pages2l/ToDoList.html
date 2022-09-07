@@ -31,7 +31,12 @@ function newTask(){
 var List = document.createElement("li");
 var inputValue = document.getElementById("inputTask").value;
 var txt = document.createTextNode(inputValue);
-
+  List.appendChild(txt);
+    if (inputValue === '') {
+    alert("Write Something!");
+  } else {
+    document.getElementById("MyToDoList").appendChild(li);
+  }
 }
 </script>
 </body>
