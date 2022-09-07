@@ -6,11 +6,15 @@
 <!-- CSS -->
 <style>
 input[type=text] {
-  margin: 0;
-  border: none;
   width: 75%;
   padding: 10px;
   font-size: 16px;
+}
+input[type=button]{
+  padding: 10px;
+  width: 25%;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 ul{
@@ -24,12 +28,10 @@ ul li {
   position: relative;
   padding: 10px 8px 10px 45px;
   font-size: 16px;
-  transition: 0.2s;
 }
 
 ul li.checked {
-  background: #888;
-  color: #fff;
+  color: #f00;
   text-decoration: line-through;
 }
 
@@ -52,7 +54,7 @@ ul li.checked::before {
 <body>
 
 <h3>to do list</h3>
-<input type="text" id="inputTask">
+<input type="text" id="inputTask" placeholder="Add Task...">
 <input type="button" class="Button" onclick="newTask()" value="add">
 
 
@@ -104,6 +106,7 @@ var txt = document.createTextNode(inputValue);
   } else {
     document.getElementById("MyToDoList").appendChild(List);
   }
+document.getElementById("inputTask").value = "";
 
 var span = document.createElement("span");
   var txt = document.createTextNode("×");
