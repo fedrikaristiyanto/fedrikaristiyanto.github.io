@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p id="content"></p>
+ 
+<script type="module">
+import { name, age } from "./me.js";
+
+let text = "name: " + name + ", age: " + age;
+
+document.getElementById("content").innerHTML = text;
+
+    
+  </script>
+  
+</body>
+
+</html>
