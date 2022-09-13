@@ -1,8 +1,6 @@
-// js module
-
 const cube = () => {
-  const x = 3;
-  return `${x}`;
+  const n = 3;
+  return n;
 };
 
 export default cube;
