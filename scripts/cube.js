@@ -1,4 +1,8 @@
 // js module
-export default function cube(x) {
-    return x**3;
-}
+
+const cube = () => {
+  const x = 3;
+  return `${x}`;
+};
+
+export default cube;
