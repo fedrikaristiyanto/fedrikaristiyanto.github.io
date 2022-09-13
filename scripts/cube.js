@@ -1,4 +1,4 @@
 // js module
-export function cube(x) {
+export default function cube(x) {
     return x**3;
 }
