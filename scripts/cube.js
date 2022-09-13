@@ -1,6 +1,3 @@
-const cube = () => {
-  const n = 3;
-  return n;
-};
+const x = 3;
 
-export default cube;
+export {x};
