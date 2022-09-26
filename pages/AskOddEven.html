@@ -50,7 +50,12 @@ p::first-letter{
 </form>
 <hr>
 <button onclick="switchColor()">switch theme</button>
-<address id="footer">fedrikaristiyanto.github.io</address>
+<address id="footer">
+<p id="Hostname"></p>
+<script>
+document.getElementById("Hostname").innerHTML=location.hostname;
+</script>
+</address>
 </body>  
 </html>  
 
