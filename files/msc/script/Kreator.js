@@ -6,7 +6,8 @@ var HordesOfChaos = [
 "<a href='https://docs.google.com/uc?export=open&id=1Ut6qFM8iRt9BjICJ8cAEo5Qw1buDkyhm'>Amok Run</a>",
 "<a href='https://docs.google.com/uc?export=open&id=1zCcrSh91SzWaAPHkimi2AKYXzw3FWHlR'>Destroy What Destroys You</a>",
 "<a href='https://docs.google.com/uc?export=open&id=1-zlpUo3yitWZq3XMI1DCO9D-G5bUpgmr'>Radical Resistance</a>",
-"<a href='https://docs.google.com/uc?export=open&id=1Qud0m0_N56pd_s5sjKupUufGFWZZIvcC'>Absolute Misanthropy</a>"
+"<a href='https://docs.google.com/uc?export=open&id=1Qud0m0_N56pd_s5sjKupUufGFWZZIvcC'>Absolute Misanthropy</a>",
+"<a href='https://docs.google.com/uc?export=open&id=1iCJ1aihQqXj9Oj2_nMILfsGw1MYjNJsz'>To The Afterborn</a>"
 ];
 document.getElementById("HordesOfChaos").innerHTML=HordesOfChaos.join(" <br> ");
 }
