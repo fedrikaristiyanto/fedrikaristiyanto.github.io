@@ -1,7 +1,7 @@
 input[type=number]{
  border:1px solid blue;
  border-radius: 4px;
- padding: 8px;
+ padding: 6px;
  font: 14px georgia;
  background-color:#e6e6ff;
 }
