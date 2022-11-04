@@ -1,1 +1,1 @@
-alert "welcome"
+alert "Welcome!"
