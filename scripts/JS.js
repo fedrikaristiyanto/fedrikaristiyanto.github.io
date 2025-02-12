@@ -1,7 +1,7 @@
 //untuk mengecek bilangan ganjil atau genap
 function GanjilGenap(){
  var number = parseInt(document.getElementById("inp").value);  
- var answer = (number % 2 == 1) ? ' adalah bilangan Ganjil' : ' adalah bilangan Genap';  
+ var answer = (number % 2 == 0) ? ' adalah bilangan Genap' : ' adalah bilangan Ganjil';  
 if (isNaN(number)){
  alert("input not valid");
 }
