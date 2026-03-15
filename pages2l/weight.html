@@ -16,6 +16,61 @@
 <div class="jumbotron">
 <h1>Satuan Berat</h1>
 </div>
+<canvas id="myCanvas" width="230" height="160">
+</canvas>
+   <script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+
+ctx.beginPath();
+
+
+ctx.moveTo(10, 30);
+
+ctx.font = "16px Cursive";
+ctx.fillText("kg",20,20);
+ctx.lineTo(40, 30);
+
+ctx.lineTo(40, 50);
+
+ctx.font = "16px Cursive";
+ctx.fillText("hg",50,40);
+ctx.lineTo(70, 50);
+
+ctx.lineTo(70, 70);
+
+ctx.font = "16px Cursive";
+ctx.fillText("dag",80,60);
+ctx.lineTo(100, 70);
+
+ctx.lineTo(100, 90);
+
+ctx.font = "16px Cursive";
+ctx.fillText("g",110,80);
+ctx.lineTo(130, 90);
+
+ctx.lineTo(130, 110);
+
+ctx.font = "16px Cursive";
+ctx.fillText("dg",140,100);
+ctx.lineTo(160, 110);
+
+ctx.lineTo(160, 130);
+
+ctx.font = "16px Cursive";
+ctx.fillText("cg",170,120);
+ctx.lineTo(190, 130);
+
+ctx.lineTo(190, 150);
+
+ctx.font = "16px Cursive";
+ctx.fillText("mg",200,140);
+ctx.lineTo(220, 150);
+
+ctx.stroke();
+      
+   </script>
 <p>
 <label for="inputKG">kilograms (kg)</label>
 <input class="form-control" id="inputKG" type="number" placeholder="kilograms" oninput="KGtoOtherUnits(this.value)"><br>
