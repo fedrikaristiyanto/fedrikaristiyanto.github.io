@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form name="form"> 
+<input id="inp">
+ <input type="button" onclick="Konversi()" value="konversi"> 
+<textarea id="hasil" readonly></textarea><br>
+<input type="radio" name="degNrad" value="Deg" checked> to Degree 
+<input type="radio" name="degNrad" value="Rad"> to Radian
+<input type="reset">
+</form>
+
+<script>
+function Konversi(){
+var x = document.getElementById("inp").value;
+var exe = document.form.degNrad.value; switch(exe){
+
+case "Deg": document.getElementById("hasil").value=x*(180/Math.PI);
+break;
+case "Rad": document.getElementById("hasil").value=x*(Math.PI/180);
+break;
+}
+} </script> 
+</body>
+</html>
