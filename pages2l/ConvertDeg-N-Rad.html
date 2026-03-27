@@ -19,9 +19,9 @@ function Konversi(){
 var x = document.getElementById("inp").value;
 var exe = document.form.degNrad.value; switch(exe){
 
-case "Deg": document.getElementById("hasil").value=x*(180/Math.PI);
+case "Deg": document.getElementById("hasil").value=Number(Math.round(x*(180/Math.PI)+'e2')+'e-2');
 break;
-case "Rad": document.getElementById("hasil").value=x*(Math.PI/180);
+case "Rad": document.getElementById("hasil").value=Number(Math.round(x*(Math.PI/180)+'e4')+'e-4');
 break;
 }
 } </script> 
