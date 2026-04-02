@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>character counter</title>
+  <link href="/css/hf.css"  rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div id="header">
 <h3>penghitung karakter</h3>
+</div>
 <textarea id="txt"></textarea>
 <button onclick="count()">count</button>
 <div style="background-color:color-mix(in srgb, yellow 25%, cyan 25%);">
@@ -15,6 +18,7 @@
 
 <p>huruf: <span id="lt"></span></p>
 </div>
+  <div id="footer">fedrikaristiyanto.github.io</div>
   <script>
 function count(){
   var i = document.getElementById("txt").value;
