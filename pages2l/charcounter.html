@@ -9,11 +9,13 @@
 <h3>penghitung karakter</h3>
 <textarea id="txt"></textarea>
 <button onclick="count()">count</button>
-<p>total karakter: <span id="o"></span></p>
+<div style="background-color:color-mix(in srgb, yellow 25%, cyan 25%);">
+  <p>total karakter: <span id="o"></span></p>
 <p>angka: <span id="D"></span></p>
 
 <p>huruf: <span id="lt"></span></p>
-<script>
+</div>
+  <script>
 function count(){
   var i = document.getElementById("txt").value;
   var dgit = new RegExp(/\d/g);
