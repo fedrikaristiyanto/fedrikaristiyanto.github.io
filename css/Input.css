@@ -1,0 +1,23 @@
+.input1 {
+ border:1px solid red;
+ border-radius: 4px;
+ padding: 6px;
+ font: 14px georgia;
+ background-color:#ffe6e6;
+}
+
+.input2 {
+ border:1px solid green;
+ border-radius: 4px;
+ padding: 6px;
+ font: 14px georgia;
+ background-color:#e6ffe6;
+}
+
+.input3 {
+ border:1px solid blue;
+ border-radius: 4px;
+ padding: 6px;
+ font: 14px georgia;
+ background-color:#e6e6ff;
+}
