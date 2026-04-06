@@ -6,8 +6,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
 </head>
 <body>
+  <div id="Cube"></div>
 <input type="number" id="numInput">
 <button id="btn">count</button>
 <input id="Result" readonly>
+  <script>
+    function setup() {
+  let canvas = createCanvas(100, 100, WEBGL);
+  canvas.parent("Cube");
+}
+
+function draw() {
+  background("silver");
+  rotateX(100);
+  rotateY(100);
+  box(50);
+}
+  </script>
 </body>
 </html>
