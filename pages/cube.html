@@ -4,15 +4,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/scripts/cube.js" async defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 </head>
 <body>
   <div id="Cube"></div>
-  <form>
+<form>
 <input type="number" id="numInput">
-<input type="button" id="btn" value="hitung">
-<input id="Result" readonly>
+<input type="button" id="btn" value="hitung"><br>
+  $$ V = s \times s \times s $$
+<input id="Result" readonly><br>
+  $$ L = 6 \times s \times s $$
 <input id="Result2" readonly>
-  </form>
+</form>
   <script>
     function setup() {
   let canvas = createCanvas(100, 100, WEBGL);
