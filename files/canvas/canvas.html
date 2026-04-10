@@ -38,6 +38,18 @@ ctx.bezierCurveTo(110, 300, 290, 300, 290,250);
 ctx.lineTo(310,145);
 
 ctx.stroke();
+
+    ctx.beginPath();
+        ctx.ellipse(200, 280, 150, 45, 0, 0, 1.25* Math.PI);
+ctx.lineWidth="2";
+        ctx.stroke();
+
+ctx.beginPath();
+        ctx.moveTo(320, 160);
+        ctx.quadraticCurveTo(390, 140, 310, 230); 
+        
+        ctx.lineWidth = "2";
+        ctx.stroke();
   </script>
 </body>
 </html>
