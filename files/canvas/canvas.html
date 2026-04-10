@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+  <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
 
   <script>
     const canvas = document.getElementById("myCanvas");
@@ -30,6 +30,14 @@
       2 * Math.PI // end angle
     );
     ctx.stroke();
+
+    ctx.beginPath();
+ctx.moveTo(90, 145);
+ctx.lineTo(110, 250);
+ctx.bezierCurveTo(110, 300, 290, 300, 290,250);
+ctx.lineTo(310,145);
+
+ctx.stroke();
   </script>
 </body>
 </html>
