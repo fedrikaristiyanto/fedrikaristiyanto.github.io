@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Ellipse</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.ellipse(
+      200, 150,   // x, y (titik tengah)
+      100, 50,    // radiusX, radiusY
+      0,          // rotasi
+      0,          // start angle
+      2 * Math.PI // end angle
+    );
+    ctx.stroke();
+  </script>
+</body>
+</html>
