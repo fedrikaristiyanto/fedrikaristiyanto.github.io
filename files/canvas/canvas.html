@@ -4,7 +4,7 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <style>
- canvas{ background-color:snow;box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
+ #myCanvas{ background-color:snow;box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.20);
 border-radius: 8px;
        transform:scale(0.5);
        }
@@ -77,5 +77,14 @@ ctx.stroke();
     ctx.font="italic 10px cursive";
     ctx.fillText("Fedrik Aristiyanto", 300, 380);
   </script>
+
+  <canvas id="c" width="500" height="300"></canvas>
+
+<script>
+var c = document.getElementById("c");
+var cx = c.getContext("2d");
+cx.fillStyle = "midnightblue";
+cx.fillRect(0, 0, 500, 300);
+</script>
 </body>
 </html>
