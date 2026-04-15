@@ -90,13 +90,15 @@ cx.fillRect(0, 0, 500, 300);
 cx.beginPath();
 cx.arc(300, 80, 45, 0, Math.PI * 2);
 cx.fillStyle = "white";
-cx.fill();
+
 
 // glow moon
-  cx.beginPath();
-cx.arc(300, 80, 55, 0, Math.PI * 2);
-cx.fillStyle = "rgba(255, 255, 255, 0.2)";
+  cx.shadowColor = "white";
+cx.shadowBlur = 50;    
+cx.shadowOffsetX = 0;
+cx.shadowOffsetY = 0;
 cx.fill();
+cx.shadowBlur=0;
 
   const stars = [
   { x: 50, y: 40, r: 1.2 },
