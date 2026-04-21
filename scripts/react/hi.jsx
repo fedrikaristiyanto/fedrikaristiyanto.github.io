@@ -4,3 +4,5 @@ function Hi() {
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<Hi />);
+
+{/* pratinjau https://codepen.io/fedrikaristiyanto/pen/KwgLKZy */}
