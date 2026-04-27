@@ -1,0 +1,4 @@
+function backspace() {
+    let text = document.getElementById("output").value;
+    document.getElementById("output").value = text.slice(0, -1);
+  }
